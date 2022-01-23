@@ -1,8 +1,8 @@
-<div class="left-line"><picture><source srcset="img/left.webp"type="image/webp"><img src="img/left.png" alt="" /></picture></div>
+<div class="left-line"><picture><source srcset="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/left.webp"type="image/webp"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/left.png" alt="" /></picture></div>
     <div class="container">
       <div class="header">
         <div class="logo">
-          <picture><source srcset="img/logo.webp"type="image/webp"><img src="img/logo.png" alt="" srcset="" /></picture>
+          <picture><source srcset="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/logo.webp"type="image/webp"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/logo.png" alt="" srcset="" /></picture>
         </div>
       </div>
       <div class="body">
