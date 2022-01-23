@@ -36,8 +36,8 @@
         </div>
       </div>
 		
-      <a href="#" class="slider__control slider__control-prev" data-slide="prev"><img height="22px" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/arrowsliderwhite.svg" alt=""></a>
-      <a href="#" class="slider__control slider__control-next" data-slide="next"><img height="22px" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/arrowsliderwhite.svg" alt=""></a>
+      <a href="#" class="slider__control slider__control-prev" data-slide="prev"></a>
+      <a href="#" class="slider__control slider__control-next" data-slide="next"></a>
     </div>
 	<div class="container">
     <section class="categories-links">
