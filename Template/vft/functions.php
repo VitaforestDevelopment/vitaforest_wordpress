@@ -322,15 +322,6 @@ function vft_header_menu_company(){
 get_template_part('/parts/menus/header/company-menu');
 }
 
-// Footer column, multipart load
-
-add_action('vft_footer_menu_display', 'vft_footer_menu_display');
-function vft_footer_menu_display(){
-    get_template_part('/parts/menus/footer/first-column');
-    get_template_part('/parts/menus/footer/second-column');
-    get_template_part('/parts/menus/footer/third-column');
-}
-
 // remove b2bking styles
 wp_deregister_style('b2bking');
 

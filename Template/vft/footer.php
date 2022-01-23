@@ -30,7 +30,7 @@
       </div>
       <div class="main-footer__navigation footer-navigation">
         <h2 hidden="true">Navigation</h2>
-        <? do_action('vft_footer_menu_display'); ?>
+        <? get_template_part('/parts/menus/footer/footer-menu'); ?>
       </div>
       <div class="main-footer__column">
         <div class="main-footer__social social">
