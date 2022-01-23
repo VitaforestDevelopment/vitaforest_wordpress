@@ -1,4 +1,3 @@
-/* Main Body */
 body {
 	margin: 0 auto;
 	padding-top: 40px;
@@ -71,20 +70,7 @@ body {
   
   .hz-kak-nazvat {
 	margin-top: 80px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-		-ms-flex-pack: justify;
-			justify-content: space-between;
-  }
-  
-  .hz-kak-nazvat__left {
-	width: 40%;
-  }
-  
-  .hz-kak-nazvat__table {
-	width: 35%;
+	width: 100%;
   }
   
   .hz-table {
@@ -140,3 +126,4 @@ body {
   .subtotal__content_first {
 	border-top: 2px solid #d0cece;
   }
+  
