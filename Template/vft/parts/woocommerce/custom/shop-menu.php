@@ -9,6 +9,9 @@
               <button class="shop-menu__btn shop-menu__params"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/params.svg" alt="Filter button"></button>
             </div>
           </div>
+          <div class="shop-menu__category-desc">
+            
+          </div>
           <div class="shop-menu__row shop-menu__filters">
 			  <div class="shop-menu__production-status">
 				  <? echo do_shortcode('[fe_widget id="15428"]'); ?>
