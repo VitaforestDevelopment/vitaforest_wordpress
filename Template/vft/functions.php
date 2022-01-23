@@ -258,19 +258,6 @@ if (class_exists('Woocommerce')){
 }
 //------------------------------------------------
 
-// Add a custom stylesheet to replace woocommerce.css
-
-function use_woocommerce_custom_css() {
-    wp_enqueue_style(
-        'woocommerce-custom', 
-        get_template_directory_uri() . '/wcstyles.css'
-    );
-  }
-  add_action('wp_enqueue_scripts', 'use_woocommerce_custom_css', 15);
-//----------------------------------------------------
-
-
-
 // SIDEBARS - NOW EMPTY
 
 // MENUS
