@@ -1,6 +1,6 @@
 <div class="left-line">
   <picture>
-    <source srcset="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/left.webp" type="image/webp"><img src="img/left.png" alt="" />
+    <source srcset="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/left.webp" type="image/webp"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/left.png" alt="" />
   </picture>
 </div>
 <div class="container">
