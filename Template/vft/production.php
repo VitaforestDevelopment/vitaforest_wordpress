@@ -368,4 +368,5 @@ minisx.onclick = function(){
 }
 
 		</script></div>
+    <script src="<?php echo get_bloginfo( 'template_directory' ); ?>/js/production.js"></script>
 <? get_footer(); ?>
