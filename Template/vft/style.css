@@ -834,9 +834,9 @@ body {
 .user-menu {
 	width: 100vw;
 	height: 100vh;
-	position: fixed;
+	position: absolute;
 	z-index: 6;
-	top: 0;
+	top: -12;
 	right: -110vw;
 	overflow-x: hidden;
 	-webkit-transition: 0.5s;
