@@ -106,7 +106,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <? get_template_part('/parts/functional/notifications'); ?>		
 <div class='main-content'>
-<div class="breadcrumbs container">
 <?php
 	if( is_front_page() ) {
 		null;
@@ -138,9 +137,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		elseif (is_page('faq')){
 		null;
 	}
-	else{
-echo do_shortcode("[breadcrumb]");
+	else{ ?>
+	<div class="breadcrumbs container"> <?
+echo do_shortcode("[breadcrumb]"); ?> </div> <?
 }	
 
 ?>
-</div>
