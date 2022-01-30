@@ -1,3 +1,7 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
+
+<?php do_action( 'wpo_wcpdf_before_document', $this->get_type(), $this->order ); ?>
+
 <div class="left-line"><picture><source srcset="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/left.webp"type="image/webp"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/left.png" alt="" /></picture></div>
     <div class="container">
       <div class="header">
@@ -52,37 +56,16 @@
               <th class="table__header table__deposit">LINE TOTAL</th>
             </tr>
           </thead>
+          <?php do_action( 'wpo_wcpdf_before_order_details', $this->get_type(), $this->order ); ?>
           <tbody class="table__body">
+          <?php foreach ( $this->get_order_items() as $item_id => $item ) : ?>
             <tr>
-              <td>Наименование товара</td>
-              <td>€000.00</td>
-              <td>000</td>
-              <td>€00000.00</td>
+              <td><?php echo $item['name']; ?></td>
+              <td>€<?php echo $item['order_price']; ?></td>
+              <td><?php echo $item['quantity']; ?></td>
+              <td>€<?php echo $item['order_price']; ?></td>
             </tr>
-            <tr>
-              <td>Наименование товара</td>
-              <td>€000.00</td>
-              <td>000</td>
-              <td>€00000.00</td>
-            </tr>
-            <tr>
-              <td>Наименование товара</td>
-              <td>€000.00</td>
-              <td>000</td>
-              <td>€00000.00</td>
-            </tr>
-            <tr>
-              <td>Наименование товара</td>
-              <td>€000.00</td>
-              <td>000</td>
-              <td>€00000.00</td>
-            </tr>
-            <tr>
-              <td>Наименование товара</td>
-              <td>€000.00</td>
-              <td>000</td>
-              <td>€00000.00</td>
-            </tr>
+            <?php endforeach; ?>
           </tbody>
         </table>
       </div>

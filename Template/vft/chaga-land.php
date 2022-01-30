@@ -119,6 +119,7 @@ Only birch chaga collected from alive trunks can exert a curative effect. You ca
             <h3 class="usage__title">Chaga mushroom will be interested to manufacturers of</h3>
             <div class="usage__slider">
                 <div class="usage__slide usage-slide">
+                    <a href="/shop/industry-food-supplements/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/supplements.svg" alt="" class="usage-slide__icon">
                     <h4 class="usage-slide__title">Food supplements</h4>
                     <ul class="usage-slide__list">
@@ -130,8 +131,10 @@ Only birch chaga collected from alive trunks can exert a curative effect. You ca
                         <li>Energy bars</li>
                         <li>Chewing gum</li>
                     </ul>
+                    </a>
                 </div>
                 <div class="usage__slide usage-slide">
+                    <a href="/shop/industry-cosmetics/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img//cosmetics.svg" alt="" class="usage-slide__icon">
                     <h4 class="usage-slide__title">Cosmetics</h4>
                     <ul class="usage-slide__list">
@@ -142,8 +145,10 @@ Only birch chaga collected from alive trunks can exert a curative effect. You ca
                         <li>Men's cosmetics</li>
                         <li>Medical cosmetics</li>
                     </ul>
+                    </a>
                 </div>
                 <div class="usage__slide usage-slide">
+                    <a href="/shop/industry-pharmaceutical-industry/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/pharma.svg" alt="" class="usage-slide__icon">
                     <h4 class="usage-slide__title">Pharma</h4>
                     <ul class="usage-slide__list">
@@ -152,8 +157,10 @@ Only birch chaga collected from alive trunks can exert a curative effect. You ca
                         <li>Ayurvedic medicines and products</li>
                         <li>Other medical products</li>
                     </ul>
+                    </a>
                 </div>
                 <div class="usage__slide usage-slide">
+                    <a href="/shop/industry-food-and-beverages/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/food.svg" alt="" class="usage-slide__icon">
                     <h4 class="usage-slide__title">Food and beverages</h4>
                     <ul class="usage-slide__list">
@@ -164,6 +171,7 @@ Only birch chaga collected from alive trunks can exert a curative effect. You ca
                         <li>Dairy products, yogurts</li>
                         <li>Herbal teas</li>
                     </ul>
+                    </a>
                 </div>
             </div>
         </section>
