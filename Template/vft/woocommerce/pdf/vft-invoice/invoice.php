@@ -1,7 +1,7 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly ?>
 
 <?php do_action( 'wpo_wcpdf_before_document', $this->get_type(), $this->order ); ?>
-
+<?php do_action( 'wpo_wcpdf_before_order_details', $this->get_type(), $this->order ); ?>
 <div class="left-line"><picture><source srcset="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/left.webp"type="image/webp"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/woocommerce/pdf/vft-invoice/src/img/left.png" alt="" /></picture></div>
     <div class="container">
       <div class="header">
@@ -22,10 +22,10 @@
           </thead>
           <tbody class="table__body">
             <tr>
-              <td>Xxxxxxxxxxxxxxxxxxxx</td>
-              <td>00/00/0000</td>
-              <td>0</td>
-              <td class="table__price">€00000.00</td>
+              <td><?php $this->order_number(); ?></td>
+              <td><?php $this->invoice_date(); ?></td>
+              <td><?php $this->invoice_number(); ?></td>
+              <td class="table__price"><?php echo $item['order_price']; ?></td>
             </tr>
             <tr>
               <td></td>
@@ -56,14 +56,13 @@
               <th class="table__header table__deposit">LINE TOTAL</th>
             </tr>
           </thead>
-          <?php do_action( 'wpo_wcpdf_before_order_details', $this->get_type(), $this->order ); ?>
           <tbody class="table__body">
           <?php foreach ( $this->get_order_items() as $item_id => $item ) : ?>
             <tr>
               <td><?php echo $item['name']; ?></td>
-              <td>€<?php echo $item['order_price']; ?></td>
+              <td><?php echo $item['order_price']; ?></td>
               <td><?php echo $item['quantity']; ?></td>
-              <td>€<?php echo $item['order_price']; ?></td>
+              <td><?php echo $item['order_price']; ?></td>
             </tr>
             <?php endforeach; ?>
           </tbody>
