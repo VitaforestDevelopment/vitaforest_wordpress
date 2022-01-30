@@ -69,6 +69,7 @@ $q = new WP_Query($a);
 <? if ( $q->have_posts() ) : ?>
 <? while ( $q->have_posts() ) : $q->the_post(); ?>
             <div class="blog-post">
+              <a href="<? the_permalink(); ?>">
                                 <div class="blog-post__info">
 									<? $postid = get_the_ID(); ?>
 									<div class="blog-post__category">
@@ -86,6 +87,7 @@ $q = new WP_Query($a);
 									</div>
                                 </div>
                             </div>
+                            </a>
                             <? endwhile; ?>
 	  <? else: ?>
 <div class="empty-search">
