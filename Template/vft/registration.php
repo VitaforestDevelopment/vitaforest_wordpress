@@ -81,12 +81,97 @@ Back</a>
 
 	</form>
 <script>
-	let h = document.createElement('h2');
+let h = document.createElement('h2');
 h.className = 'woocommerce-title';
 h.innerHTML = 'COMPANY INFORMATION';
 document.querySelectorAll('.b2bking_custom_registration_container')[4].before(h)</script>
 </div>
-	<?
+<? do_action('vft_js_jquery'); ?>
+<script>
+	 $(function () {
+    function passwordCheck(password) {
+      if (password.length >= 8) strength += 1;
+
+      if (password.match(/(?=.*[0-9])/)) strength += 1;
+
+      if (password.match(/(?=.*[!,%,&,@,#,$,^,*,?,_,~,<,>,])/)) strength += 1;
+
+      if (password.match(/(?=.*[a-z])/)) strength += 1;
+
+      if (password.match(/(?=.*[A-Z])/)) strength += 1;
+
+      displayBar(strength);
+    }
+
+    function displayBar(strength) {
+      switch (strength) {
+        case 1:
+          $("#password-strength span").css({
+            width: "20%",
+            background: "#de1616",
+          });
+          break;
+
+        case 2:
+          $("#password-strength span").css({
+            width: "40%",
+            background: "#de1616",
+          });
+          break;
+
+        case 3:
+          $("#password-strength span").css({
+            width: "60%",
+            background: "#de1616",
+          });
+          break;
+
+        case 4:
+          $("#password-strength span").css({
+            width: "80%",
+            background: "#FFA200",
+          });
+          break;
+
+        case 5:
+          $("#password-strength span").css({
+            width: "100%",
+            background: "#06bf06",
+          });
+          break;
+
+        default:
+          $("#password-strength span").css({
+            width: "0",
+            background: "#de1616",
+          });
+      }
+    }
+
+    $("#reg_password").after(
+      '<div id="password-strength" class="strength"><span class="password-strenght-span"></span></div>'
+    );
+
+    $("#reg_password")
+      .focus(function () {
+        $("#password-strength").css({
+          height: "7px",
+        });
+      })
+      .blur(function () {
+        $("#password-strenght").css({
+          height: "0px",
+        });
+      });
+
+    $("#reg_password").keyup(function () {
+      strength = 0;
+      var password = $(this).val();
+      passwordCheck(password);
+    });
+  });
+</script>
+<?
 get_footer();
 ?>
 	</div>
