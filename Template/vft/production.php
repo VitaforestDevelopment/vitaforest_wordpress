@@ -121,8 +121,9 @@ get_header();
 
 
     </div>
+	  </div>
     <div class="products-slider">
-      <div class="products-slider__header">
+      <div class="products-slider__header container">
         <h3 class="products-slider__title">Powders</h3>
         <a href="/shop/category-powders" class="products-slider__link">See products</a>
       </div>
@@ -136,7 +137,7 @@ get_header();
         'orderby'        => 'date'
     	);
     $query = new WP_Query($a); ?>
-      <div class="products-slider__wrapper">
+      <div class="products-slider__wrapper" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false ,"pageDots": false}'>
 		  <? if ($query->have_posts()) {
 			while ($query->have_posts()) {
             $query->the_post(); ?>
@@ -159,7 +160,7 @@ get_header();
 		  ?>
       </div>
       <!--Вот тут товары больше не выводи-->
-    </div>
+    
   </div>
 </section>
 
@@ -254,8 +255,9 @@ double-double carton boxes.
 		</div>
     </div>
 	</div>
+	    </div>
     <div class="products-slider">
-      <div class="products-slider__header">
+      <div class="products-slider__header container">
         <h3 class="products-slider__title">Extracts</h3>
         <a href="/shop/category-extracts" class="products-slider__link">See products</a>
       </div>
@@ -269,7 +271,7 @@ double-double carton boxes.
         'orderby'        => 'date'
     	);
     $queryb = new WP_Query($b); ?>
-      <div class="products-slider__wrapper">
+      <div class="products-slider__wrapper" data-flickity='{ "autoPlay": 1500, "pauseAutoPlayOnHover": false ,"pageDots": false}'>
 		  <? if ($queryb->have_posts()) {
 			while ($queryb->have_posts()) {
             $queryb->the_post(); ?>
@@ -293,7 +295,7 @@ double-double carton boxes.
       </div>
       <!--Вот тут товары больше не выводи-->
     </div>
-  </div>
+
 </section>
 
 <div class="container">
