@@ -1812,3 +1812,7 @@ box-shadow: 0px 4px 14px rgb(26 33 45 / 30%);
 		display: none !important;
 	}
 }
+
+.usage-slide a{
+  text-decoration-line: none;
+}
