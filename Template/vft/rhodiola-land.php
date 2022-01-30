@@ -129,6 +129,7 @@
             <h3 class="usage__title">Rhodiola Rosea will be interested to manufacturers of</h3>
             <div class="usage__slider">
                 <div class="usage__slide usage-slide">
+                    <a href="/shop/industry-food-supplements/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/supplements.svg" alt="" class="usage-slide__icon">
                     <h4 class="usage-slide__title">Food supplements</h4>
                     <ul class="usage-slide__list">
@@ -142,8 +143,10 @@
                             products for women and men; heart health medicines, etc</li>
                         <li>Dietary supplements stimulating stamina, enhancing productivity; nootropics</li>
                     </ul>
+                    </a>
                 </div>
                 <div class="usage__slide usage-slide">
+                    <a href="/shop/industry-cosmetics/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img//cosmetics.svg" alt="" class="usage-slide__icon">
                     <h4 class="usage-slide__title">Cosmetics</h4>
                     <ul class="usage-slide__list">
@@ -154,8 +157,10 @@
                         <li>Deodorants (including dry deodorants) and foot саге creams</li>
                         <li>Hair dyes and coloring balms (rhodiola is а natural dye)</li>
                     </ul>
+                    </a>
                 </div>
                 <div class="usage__slide usage-slide">
+                    <a href="/shop/industry-pharmaceutical-industry/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/pharma.svg" alt="" class="usage-slide__icon">
                     <h4 class="usage-slide__title">Pharma</h4>
                     <ul class="usage-slide__list">
@@ -164,8 +169,10 @@
                         <li> lmmunomodulatory products</li>
                         <li>Anti-viral and anti-inflammatory products</li>
                     </ul>
+                    </a>
                 </div>
                 <div class="usage__slide usage-slide">
+                    <a href="/shop/industry-healthy-nutrition/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/nutrition.svg" alt="" class="usage-slide__icon">
                     <h4 class="usage-slide__title">Healthy nutrition</h4>
                     <ul class="usage-slide__list">
@@ -174,8 +181,10 @@
                         <li>Sports creams and gels</li>
                         <li>Sports dietary supplements.</li>
                     </ul>
+                    </a>
                 </div>
                 <div class="usage__slide usage-slide">
+                    <a href="/shop/industry-food-and-beverages/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/food.svg" alt="" class="usage-slide__icon">
                     <h4 class="usage-slide__title">Food and beverages</h4>
                     <ul class="usage-slide__list">
@@ -184,6 +193,7 @@
                         <li>Marmalade, marshmallows</li>
                         <li>Dry and liquid jelly</li>
                     </ul>
+                    </a>
                 </div>
             </div>
         </section>
