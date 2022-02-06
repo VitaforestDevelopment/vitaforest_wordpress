@@ -669,7 +669,7 @@ class B2bking_Public{
 									$tier_values = explode(':', $price_tiers_array[0]);
 									?>
 									<tr>
-										<td><?php echo esc_html($tier_values[0]).'+'; do_action('b2bking_tiered_table_after_quantity', $post->ID); ?></td>
+										<td class="quanity"><?php echo esc_html($tier_values[0]).'+'; do_action('b2bking_tiered_table_after_quantity', $post->ID); ?></td>
 
 										<?php 
 										// adjust price for tax
@@ -677,7 +677,7 @@ class B2bking_Public{
 										$helper = new B2bking_Helper();
 										$tier_values[1] = $helper->b2bking_wc_get_price_to_display( $product, array( 'price' => $tier_values[1] ) ); // get sale price
 										?>
-										<td><?php echo wc_price($tier_values[1]); do_action('b2bking_tiered_table_after_price', $post->ID);?></td>
+										<td class="price"><?php echo wc_price($tier_values[1]); do_action('b2bking_tiered_table_after_price', $post->ID);?></td>
 									</tr>
 									<?php
 								} else {
