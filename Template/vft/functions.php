@@ -244,6 +244,10 @@ function vft_js_jquery(){
 echo '<script type="text/javascript" src="'.get_template_directory_uri().'/js/jquery.js"></script>';
 }
 
+add_action('vft_js_pcslider', 'vft_js_pcslider');
+function vft_js_pcslider(){
+echo '<script type="text/javascript" src="'.get_template_directory_uri().'/js/productcard-slider.js"></script>';
+}
 
 // Theme Support
 
