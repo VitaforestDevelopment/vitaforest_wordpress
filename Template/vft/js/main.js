@@ -600,9 +600,11 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener('scroll', () => {
         categoryDescriptionContainer.innerHTML = '<h2>Food Supplements</h2><p>Due to unique characteristics of siberian mushrooms and herbs, VitaForest\’s...</p>' + '<button class="read-description btn">Read more</button>';
       })
-      document.querySelector('.read-description').addEventListener('click', () => {
-        categoryDescriptionContainer.innerHTML = foodSupplementsFull;
-      })
+      if (document.querySelector('.read-description') != null) {
+        document.querySelector('.read-description').addEventListener('click', () => {
+          categoryDescriptionContainer.innerHTML = foodSupplementsFull;
+        })
+      }
       break;
     default:
       console.log('Миша, всё хуйня, давай по новой.');
