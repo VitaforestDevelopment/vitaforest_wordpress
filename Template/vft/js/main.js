@@ -644,6 +644,8 @@ if (categoryDescriptionContainer != null) {
 }
 
 
-console.log('Vitaforest main.js status: Ok');
-console.log('You guys dont need to crack that code. Youre young, youre joking, its easy for you. This isnt it. This isnt Chikatilo or even the secret service archives. Its better to stay out of here. Seriously, any of you will regret it. Better close the code and forget what was written here. I quite understand that this message will cause additional interest, but I want to warn inquisitive at once - stop. The rest just will not find...');
+console.log('main.js load status: Ok');
+setTimeout(console.log('У меня нет проблем, кроме моей башки'), 10000);
+setTimeout(console.log('1000-7'), 12000);
+setTimeout(console.log('Я умер, прости'), 14000);
 
