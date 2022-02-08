@@ -645,7 +645,7 @@ if (categoryDescriptionContainer != null) {
 
 
 console.log('main.js load status: Ok');
-setTimeout(console.log('У меня нет проблем, кроме моей башки'), 10000);
-setTimeout(console.log('1000-7'), 12000);
-setTimeout(console.log('Я умер, прости'), 14000);
+setTimeout(() => { console.log('У меня нет проблем, кроме моей башки') }, 10000);
+setTimeout(() => { console.log('1000-7') }, 12000);
+setTimeout(() => { console.log('Я умер, прости') }, 14000);
 
