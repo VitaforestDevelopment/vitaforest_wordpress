@@ -352,22 +352,16 @@ const shownPrice = document
 priceRows.forEach((element) => {
   element.querySelector(".woocommerce-Price-currencySymbol ").remove();
 });
-let unSortedPriceArray = [];
-let unSortedQtyArray = [];
-let priceArray = unSortedPriceArray.sort(function (a, b) {
-  return a - b;
-})
-let qtyArray = unSortedQtyArray.sort(function (a, b) {
-  return a - b;
-})
+let priceArray = [];
+let qtyArray = [];
 for (let index = 0; index < priceRows.length; index++) {
   const element = priceRows[index];
   quantity = Number(
     element.firstElementChild.textContent.split(" ")[0].replace(/[^0-9]/g, "")
   );
   amount = Number(element.childNodes[3].textContent);
-  unSortedQtyArray.push(quantity);
-  unSortedPriceArray.push(amount);
+  qtyArray.push(quantity);
+  priceArray.push(amount);
 }
 let qtyLenght = qtyArray.length;
 function calcResult() {
