@@ -17701,3 +17701,15 @@ https://flickity.metafizzy.co
         display: block;
         transition: width 0.3s;
       }
+
+.read-description{
+	border: none;
+    background: white;
+    color: #40bf6a;
+    margin: 10 0;
+    padding: 0;
+}
+
+.read-description:hover, .read-description:active{
+	text-decoration-line: underline;
+}

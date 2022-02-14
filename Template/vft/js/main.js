@@ -388,14 +388,12 @@ if (validateProductPage) {
         currency + "" + Number(qty.value) * Number(price.innerHTML);
       qty.onchange = function () {
         if (price != null) {
-          console.log('jija')
           amount = calcResult();
           shownPrice.innerHTML =
             '<span class="woocommerce-Price-currencySymbol">' +
             currency +
             "</span>" +
             amount;
-          console.log(amount)
           totalPrice.innerHTML = currency + "" + Number(this.value) * amount;
         }
       };
@@ -717,7 +715,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           foodSupplementsFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = foodSupplementsFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = foodSupplementsFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-cosmetics/":
@@ -725,7 +723,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           cosmeticsFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = cosmeticsFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = cosmeticsFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-pharmaceutical-industry/":
@@ -733,7 +731,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           pharmaceuticalFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = pharmaceuticalFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = pharmaceuticalFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-healthy-nutrition/":
@@ -741,7 +739,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           nutritionFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = nutritionFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = nutritionFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-feed-additives/":
@@ -749,7 +747,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           additivesFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = additivesFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = additivesFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-food-and-beverages/":
@@ -757,11 +755,11 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           beveragesFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = beveragesFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = beveragesFull;" class="read-description">Read more</button>';
       });
       break;
     default:
-      console.log("Я искал и пытался, но тут нихуя нет.");
+      console.log("main.js alert: This page does not contain descriptions");
   }
 }
 
