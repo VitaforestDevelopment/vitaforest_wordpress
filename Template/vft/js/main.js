@@ -334,72 +334,72 @@ if (allCount != null) {
   completedCount.innerHTML = "(" + complete + ")";
 }
 // Total price calc
-const qty = document.querySelector(".input-text");
-const totalPrice = document.querySelector(".product__total-price");
-const price = document.querySelector(".product-price-calc");
-const currency = document.querySelector(
-  ".woocommerce-Price-currencySymbol"
-).innerHTML;
-const priceTable = document.querySelector(".b2bking_shop_table");
-const priceTableBody = priceTable.getElementsByTagName("tbody")[0];
-const productPage = document.querySelector(".product-head");
-const priceRows = Array.prototype.slice.call(
-  priceTableBody.getElementsByTagName("tr")
-);
-const shownPrice = document
-  .querySelector(".product__price")
-  .getElementsByTagName("bdi")[0];
-priceRows.forEach((element) => {
-  element.querySelector(".woocommerce-Price-currencySymbol ").remove();
-});
-let priceArray = [];
-let qtyArray = [];
-for (let index = 0; index < priceRows.length; index++) {
-  const element = priceRows[index];
-  quantity = Number(
-    element.firstElementChild.textContent.split(" ")[0].replace(/[^0-9]/g, "")
+const validateProductPage = document.querySelector('.product-container');
+if (validateProductPage) {
+  const qty = document.querySelector(".input-text");
+  const totalPrice = document.querySelector(".product__total-price");
+  const price = document.querySelector(".product-price-calc");
+  const currency = document.querySelector(
+    ".woocommerce-Price-currencySymbol"
+  ).innerHTML;
+  const priceTable = document.querySelector(".b2bking_shop_table");
+  const priceTableBody = priceTable.getElementsByTagName("tbody")[0];
+  const productPage = document.querySelector(".product-head");
+  const priceRows = Array.prototype.slice.call(
+    priceTableBody.getElementsByTagName("tr")
   );
-  amount = Number(element.childNodes[3].textContent);
-  qtyArray.push(quantity);
-  priceArray.push(amount);
-}
-let qtyLenght = qtyArray.length;
-function calcResult() {
-  for (let i = 0; i < qtyLenght; i++) {
-    currentValue = Number(qty.value);
-    if (currentValue < qtyArray[0]) {
-      let drawableprice = priceArray[0];
-      return drawableprice;
-    } else if (currentValue >= qtyArray[i] && currentValue < qtyArray[i + 1]) {
-      let drawableprice = priceArray[i];
-      return drawableprice;
-    } else if (currentValue >= qtyArray[qtyLenght - 1]) {
-      let drawableprice = priceArray[qtyLenght - 1];
-      return drawableprice;
+  const shownPrice = document
+    .querySelector(".product__price")
+    .getElementsByTagName("bdi")[0];
+  priceRows.forEach((element) => {
+    element.querySelector(".woocommerce-Price-currencySymbol ").remove();
+  });
+  let priceArray = [];
+  let qtyArray = [];
+  for (let index = 0; index < priceRows.length; index++) {
+    const element = priceRows[index];
+    quantity = Number(
+      element.firstElementChild.textContent.split(" ")[0].replace(/[^0-9]/g, "")
+    );
+    amount = Number(element.childNodes[3].textContent);
+    qtyArray.push(quantity);
+    priceArray.push(amount);
+  }
+  let qtyLenght = qtyArray.length;
+  function calcResult() {
+    for (let i = 0; i < qtyLenght; i++) {
+      currentValue = Number(qty.value);
+      if (currentValue < qtyArray[0]) {
+        let drawableprice = priceArray[0];
+        return drawableprice;
+      } else if (currentValue >= qtyArray[i] && currentValue < qtyArray[i + 1]) {
+        let drawableprice = priceArray[i];
+        return drawableprice;
+      } else if (currentValue >= qtyArray[qtyLenght - 1]) {
+        let drawableprice = priceArray[qtyLenght - 1];
+        return drawableprice;
+      }
+    }
+  }
+  let priceNum = Number(price.innerHTML)
+  if (productPage != null) {
+    if (qty != null && priceNum != 0) {
+      totalPrice.innerHTML =
+        currency + "" + Number(qty.value) * Number(price.innerHTML);
+      qty.onchange = function () {
+        if (price != null) {
+          amount = calcResult();
+          shownPrice.innerHTML =
+            '<span class="woocommerce-Price-currencySymbol">' +
+            currency +
+            "</span>" +
+            amount;
+          totalPrice.innerHTML = currency + "" + Number(this.value) * amount;
+        }
+      };
     }
   }
 }
-let priceNum = Number(price.innerHTML)
-if (productPage != null) {
-  if (qty != null && priceNum != 0) {
-    totalPrice.innerHTML =
-      currency + "" + Number(qty.value) * Number(price.innerHTML);
-    qty.onchange = function () {
-      if (price != null) {
-        console.log('jija')
-        amount = calcResult();
-        shownPrice.innerHTML =
-          '<span class="woocommerce-Price-currencySymbol">' +
-          currency +
-          "</span>" +
-          amount;
-        console.log(amount)
-        totalPrice.innerHTML = currency + "" + Number(this.value) * amount;
-      }
-    };
-  }
-}
-
 // Search filter
 const searchPage = document.querySelector(".search-page");
 if (searchPage != null) {
@@ -715,7 +715,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           foodSupplementsFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = foodSupplementsFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = foodSupplementsFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-cosmetics/":
@@ -723,7 +723,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           cosmeticsFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = cosmeticsFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = cosmeticsFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-pharmaceutical-industry/":
@@ -731,7 +731,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           pharmaceuticalFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = pharmaceuticalFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = pharmaceuticalFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-healthy-nutrition/":
@@ -739,7 +739,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           nutritionFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = nutritionFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = nutritionFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-feed-additives/":
@@ -747,7 +747,7 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           additivesFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = additivesFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = additivesFull;" class="read-description">Read more</button>';
       });
       break;
     case "/shop/industry-food-and-beverages/":
@@ -755,11 +755,11 @@ if (categoryDescriptionContainer != null) {
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
           beveragesFull.substring(0, 200) +
-          '<button onclick="categoryDescriptionContainer.innerHTML = beveragesFull;" class="read-description btn">Read more</button>';
+          '...</br><button onclick="categoryDescriptionContainer.innerHTML = beveragesFull;" class="read-description">Read more</button>';
       });
       break;
     default:
-      console.log("Я искал и пытался, но тут нихуя нет.");
+      console.log("main.js alert: This page does not contain descriptions");
   }
 }
 
