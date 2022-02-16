@@ -73,7 +73,18 @@ while ( have_posts() ) :
             ?>
         </div>
     </div>
+<script src="<?php echo get_bloginfo( 'template_directory' ); ?>/js/jquery.js"></script>
 <script src="<?php echo get_bloginfo( 'template_directory' ); ?>/js/production.js"></script>
+<script>
+//single wiki slider related
+  let $wikiSlider = $('.related-products__slider_nojs').flickity({
+    freeScroll: true,
+	contain: true,
+	prevNextButtons: false,
+	pageDots: false
+});
+
+</script>
 <?
 get_footer();
 ?>
