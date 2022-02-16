@@ -73,9 +73,7 @@ while ( have_posts() ) :
             ?>
         </div>
     </div>
-<?
-do_action('vft_js_singlewiki');
-?>
+<script src="<?php echo get_bloginfo( 'template_directory' ); ?>/js/production.js"></script>
 <?
 get_footer();
 ?>
