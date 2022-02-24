@@ -20,6 +20,13 @@
       
       // Get the WP_User roles and capabilities
       $user_roles = $user->roles;
+
+    $user_id = $order->get_user_id();
+    $user_country_get = $user->billing_country;
+		$country_arr = WC()->countries->get_countries();
+		$full_country_name = $country_arr[$user_country_get];
+    $vatNum = get_user_meta($user_id, b2bking_custom_field_15829);
+		$codeNum = get_user_meta($user_id, b2bking_custom_field_15821);
       
       // Get the Customer billing email
       $billing_email  = $order->get_billing_email();
@@ -62,7 +69,12 @@
           </thead>
           <tbody class="table__body">
             <tr>
-              <td><?php $this->order_number(); ?></td>
+              <td>
+              Company name: <? echo $billing_company; ?></br>
+              Address: <? echo  $billing_address_1.', '.$billing_address_2.', '.$billing_postcode.', '.$billing_city.', '.$full_country_name; ?></br>
+              Register code: <? echo $codeNum[0]; ?></br>
+              VAT: <? echo $vatNum[0]; ?>
+              </td>
               <td><?php $this->invoice_date(); ?></td>
               <td><?php $this->invoice_number(); ?></td>
               <td class="table__price"><?php echo $item['order_price']; ?></td>
@@ -102,7 +114,7 @@
               <td><?php echo $item['name']; ?></td>
               <td><?php 
               $baseVal = $item['order_price'];
-              $baseVal = preg_replace('/[^0-9]/', '', $baseVal);
+              $baseVal = preg_replace('/[^0-9 .]/', '/,,+/', '', $baseVal);
               $resultVal = $baseVal/$item['quantity'];
               echo '€'.$resultVal;
               ?></td>
