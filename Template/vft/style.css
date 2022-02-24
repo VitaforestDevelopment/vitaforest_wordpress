@@ -17707,3 +17707,11 @@ https://flickity.metafizzy.co
 .read-description:hover, .read-description:active{
 	text-decoration-line: underline;
 }
+
+.number-minus:hover, .number-plus:hover{
+cursor: pointer;
+}
+
+.qty_button.plus:hover, .qty_button.minus:hover{
+cursor: pointer;	
+}
