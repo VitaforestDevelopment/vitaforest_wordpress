@@ -56,6 +56,7 @@ do_action( 'woocommerce_before_main_content' );
 			do_action('vft_js_slickslider');
 			do_action( 'vft_js_shop' );
 			?>
+			<script src="<?php echo get_bloginfo( 'template_directory' ); ?>/js/search.js"></script>
 		</section>
 	</div>
 </div>
