@@ -13,6 +13,35 @@ function login_check(){
 	return $loginstatus;
 }
 }
+//-------------------------------------
+
+
+
+if(!function_exists('authquote')){
+	function authquote(){
+		global $product;
+		$lInfo = is_user_logged_in();
+		$stockInfo = $product->get_stock_status();
+		if ($stockInfo == 'outofstock' && $lInfo == true){
+			echo get_template_part('/parts/woocommerce/auth-quote');
+		}
+		else{
+			quote();
+		}
+	}
+}
+
+if(!function_exists('authquote2')){
+	function authquote2(){
+		global $product;
+		$stockInfo = $product->get_stock_status();
+		if($stockInfo == 'outofstock'){
+			echo 'hide-qty-quote';
+		}
+	}
+}
+
+
 
 //-------------------------------------
 
@@ -93,9 +122,9 @@ function sku_drawer(){
 }
 ?>
 <div class="product__purchase-wrapper">
-	<? quote(); ?>
 <p class="product__sku product__sku-bottom <? logged_sku(); ?>">SKU: <? sku_drawer(); ?></p>
-<div class="number <? hide_qty_editor(); ?>">
+	<? authquote(); ?>
+<div class="number <? hide_qty_editor(); ?> <? authquote2(); ?>">
 	<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
 	<input class="product-quantity" type="number" value="<? if ($dvalue <= 0){echo '1';}else{echo $dvalue;} ?>" step="<? if ($svalue <= 0){echo '1';}else{echo $svalue;} ?>" min="<? if ($dvalue <= 0){echo '1';}else{echo $dvalue;} ?>"/>
 	<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
