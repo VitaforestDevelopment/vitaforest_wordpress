@@ -20,6 +20,7 @@ if ( ! defined('WPINC') ) {
 <div class="<?php echo flrt_filter_class( $filter ); // Already escaped ?>" data-fid="<?php echo esc_attr( $filter['ID'] ); ?>">
     <?php flrt_filter_header( $filter, $terms ); // Safe, escaped ?>
     <div class="<?php echo esc_attr( flrt_filter_content_class( $filter ) ); ?>">
+		<textarea class="shop-filter__search"></textarea>
         <ul class="wpc-filters-ul-list wpc-filters-checkboxes"><?php
 
             if( ! empty( $terms ) ):

@@ -111,7 +111,7 @@ class WalkerCheckbox extends \Walker
             }
         }
 
-        $link =  apply_filters( 'wpc_filters_checkbox_term_html', '<a'.$attributes.'>'.$term->name.'</a>', $attributes, $term, $filter );
+        $link =  apply_filters( 'wpc_filters_checkbox_term_html', '<a'.$attributes.'class="ya-ne-umru-v-tualete"'.'>'.$term->name.'</a>', $attributes, $term, $filter );
 
         if ( ! empty( $args['show_count'] ) && $args['show_count'] === 'yes' ) {
             $link .= '&nbsp;'. flrt_get_count( $term );

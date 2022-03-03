@@ -135,8 +135,33 @@ $num = 1;
 	<?php endforeach; ?>
 
 </table>
+<? if(is_user_logged_in()){ echo '<p hidden="true" class="login-state"></p>';} ?>
+<script>
+const checkLoginQuote = document.querySelector('.login-state');
+	if(checkLoginQuote){
+let quoteFields = document.querySelector('.quote-fields');
+let quoteFieldsNode = document.querySelectorAll('.addify-option-field');
+		quoteFieldsNode.forEach((element, id)=>{
+			element.style.display = 'none';
+			id++;
+			if(id == 7){
+				element.style.display = 'flex';
+			}
+		});
+	}
+	else{
+	let quoteFields = document.querySelector('.quote-fields');
+	let quoteFieldsNode = document.querySelectorAll('.addify-option-field');
+				quoteFieldsNode.forEach((element, id)=>{
+			id++;
+			if(id < 7){
+				let input = element.getElementsByTagName('input')[0];
+				input.setAttribute('required', 'required');
+			}
+			})
+	}
+</script>
 <? if(is_user_logged_in( )){
-
 }
 else{
     echo '<p class="required-notification-quote">
