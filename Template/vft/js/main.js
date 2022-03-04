@@ -335,9 +335,9 @@ if (allCount != null) {
 }
 // Total price calc
 const validateProductPage = document.querySelector('.product-container');
-if (validateProductPage) {
+const totalPrice = document.querySelector(".product__total-price");
+if (validateProductPage && totalPrice) {
   const qty = document.querySelector(".input-text");
-  const totalPrice = document.querySelector(".product__total-price");
   const price = document.querySelector(".product-price-calc");
   const currency = document.querySelector(
     ".woocommerce-Price-currencySymbol"
@@ -763,13 +763,9 @@ if (categoryDescriptionContainer != null) {
   }
 }
 
-console.log("main.js load status: Ok");
-setTimeout(() => {
-  console.log("У меня нет проблем, кроме моей башки");
-}, 10000);
-setTimeout(() => {
-  console.log("1000-7");
-}, 12000);
-setTimeout(() => {
-  console.log("Я умер, прости");
-}, 14000);
+// Валидатор Quote'a
+const quoteInProductPage = document.querySelector('.quote_plugin');
+if (quoteInProductPage) {
+  let oldForm = document.querySelector('.hide_this');
+  oldForm.style.display = 'none';
+}

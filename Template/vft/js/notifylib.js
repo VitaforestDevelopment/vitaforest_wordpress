@@ -34,6 +34,17 @@ function createNotification(notificationName, notificationText, actionName, clas
     }
 }
 
+function createNotificationOnce(notificationName, notificationText, actionName, className) {
+    // Создаем новый DIV для вставки шаблона
+    let newElement = document.createElement('div');
+    // Шаблон уведомления
+    newElement.innerHTML = '<div class="popup ' + className + '-main">' +
+        '<div class="' + className + ' popup__head">' + '<p class="' + className + ' popup__title">' + notificationName + '</p>' + '</div>' + '<p class="' + className + ' popup__text">' + notificationText + '</p>' + '<div class="popup-actions">' + '<a class="popup__confirm ' + className + '-confirm" href="#">' + actionName + '</a>' + '</div>' + '</div>';
+    // Добавляем уведомление в контейнер 
+    notificationContainer.appendChild(newElement);
+    logicNotificationOnce(className);
+}
+
 /**
  * @param {*} notificationUrl Ссылка прикрепленная к кнопке, для перехода по клику
  */
@@ -72,6 +83,21 @@ function logicNotification(className) {
             localStorage.setItem(storageItemName, true);
         })
     }
+}
+
+function logicNotificationOnce(className) {
+    let notificationMainName = '.' + className + '-main';
+    let notificationActionName = '.' + className + '-confirm';
+    let notificationMain = document.querySelector(notificationMainName);
+    let acceptBtn = notificationMain.querySelector(notificationActionName);
+    notificationMain.classList.add('popup_active');
+    // Событие на клик по кнопке внутри уведомления
+    acceptBtn.addEventListener('click', () => {
+        notificationMain.classList.remove('popup_active');
+    })
+    setTimeout(() => {
+        notificationMain.classList.remove('popup_active');
+    }, 5000);
 }
 
 // Функция создания уведомления для неавторизованных пользователей

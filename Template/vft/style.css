@@ -17818,3 +17818,13 @@ cursor: pointer;
 	.shop_table.b2bking_shop_table{
 		display: none;
 	}
+
+	.product__order.product__order_request.quote_plugin form{
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+	}
+
+	.added_to_quote{
+		display: none;
+	}

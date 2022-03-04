@@ -6,7 +6,7 @@ function stock_qty_changer(){
         echo '';
     }
 	else{
-		echo ' product__order_request';
+		echo ' product__order_request hide_this';
 	}
 }
 ?>

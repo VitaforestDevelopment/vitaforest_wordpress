@@ -70,7 +70,7 @@ $cartnlstyle = ' style="display:none;"';
             $title = $_product->get_title();
             $price = $_product->get_price();
             $ps = $_product->get_attribute('productionstatus');
-            $qty = $values['quantity'];
+            $qty = $quote_item['quantity'];
 			if ($ps == 'Get now'){
 				$attribute = '_avaliable';
 			}
