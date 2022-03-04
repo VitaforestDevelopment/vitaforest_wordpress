@@ -17828,3 +17828,42 @@ cursor: pointer;
 	.added_to_quote{
 		display: none;
 	}
+
+	.ukraine{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 55px;
+	}
+	.ukraine .text{
+		font-size: 14px;
+		margin: 0;
+		margin-top: 15px;
+		height: 100%;
+		width: 100%;
+	}
+	.ukraine-flag{
+	margin-top: 10px;
+	height: 100px;
+	}
+	@media screen and (min-width: 1128px){
+		.ukraine{
+		margin-top: 20px;
+			height: 100px;
+			flex-direction: row;
+		justify-content: space-between;
+			}
+		.ukraine-flag{
+			margin-top: 0px;
+			display: block;
+			height: 100%;
+			z-index: 20;
+		}
+		.ukraine .text{
+		line-height: 20px;
+		font-size: 14px;
+		margin: 0;
+		margin-top: 0px;
+		height: 100%;
+		width: 85%;
+	}
+	}

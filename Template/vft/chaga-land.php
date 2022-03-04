@@ -80,7 +80,7 @@ Only birch chaga collected from alive trunks can exert a curative effect. You ca
                 </div>
                 <div class="advantages__item advantage">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/mountains.svg" alt="" class="advantage__logo">
-                    <h4 class="advantage__title">Products of Russian origin</h4>
+                    <h4 class="advantage__title">Products of Siberian origin</h4>
                     <p class="advantage__description">Wild raw materials from Siberia</p>
                     <p class="advantage__text">We meticulously collect raw materials
                         in ecologically safe regions of Siberia to preserve the most

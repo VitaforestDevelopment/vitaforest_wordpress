@@ -4,6 +4,10 @@
 */
 ?>
 <? get_header();?>
+<div class="container">
+<div class="ukraine" style="display: flex;">
+<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/flag.jpg" alt="Flag of Ukraine" class="ukraine-flag">
+<p class="text">We are very upset by what is happening in Ukraine and on the international market, we regret that civilians are involved in the conflict caused by the games in the big political arena. VITAFOREST team does not endorse such a way of solving problems. The situation starting to become more complicated, but we hope that our cooperation will continue. For several years we operate on the international market by supplying genuinely high-quality ingredients to make life healthier for all the people around the globe, VITAFOREST is absolutely friendly to all countries and nations. We value the fact that we managed to build a mutually beneficial relationship with you. Let me express a hope that we can get through this together.</p></div></div>
 <main class="main-content">
 	<h1 hidden="true">
 		Vitaforest - Natural products from Siberia

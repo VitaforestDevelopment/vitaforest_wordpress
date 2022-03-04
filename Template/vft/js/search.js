@@ -1,5 +1,10 @@
 const filterInputs = document.querySelectorAll(".shop-filter__search");
 if (filterInputs) {
+    [...filterInputs].forEach((elem) => {
+        console.log(elem);
+    })
+}
+if (filterInputs) {
     [...filterInputs].forEach(
         (input) =>
         (input.addEventListener("keyup", () => {
