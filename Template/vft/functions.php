@@ -1242,14 +1242,6 @@ function chaga_promo_create_lead( $contact_form ) {
        $submission = WPCF7_Submission::get_instance();
        $posted_data = $submission->get_posted_data();
 	   
-	   // Механизм "Русская рулетка"
-	   $russianRoulette = rand(1,2);
-	   if ( $russianRoulette == 1 ){
-		   $assignedUser = 492; // Тарас
-	   }
-	   elseif ($russianRoulette == 2){
-		   $assignedUser = 571; // Вася
-	   }
 
        // Далее перехватываем введенные данные в полях Contact Form 7:
        // 1. Перехватываем поле [your-name]
@@ -1270,7 +1262,6 @@ function chaga_promo_create_lead( $contact_form ) {
 		  'SOURCE_ID' => 'Промо-страница Чаги',
 		   'PHONE_WORK' => $phoneNumber,
 		  'NAME' => $firstName,
-		  'ASSIGNED_BY_ID' => $assignedUser,
        );
 
        // Передаем данные из Contact Form 7 в Bitrix24
@@ -1344,15 +1335,6 @@ function rhodiola_promo_create_lead( $contact_form ) {
 	   $companyName = $posted_data['company'];
 	   $senderEmail = $posted_data['your-email'];
 	   $phoneNumber = $posted_data['phone'];
-	   
-	   	   $russianRoulette = rand(1,2);
-	   if ( $russianRoulette == 1 ){
-		   $assignedUser = 492; // Тарас
-	   }
-	   elseif ($russianRoulette == 2){
-		   $assignedUser = 571; // Вася
-	   }
-
 
        // Формируем параметры для создания лида в переменной $postData = array
        $postData = array(
@@ -1364,7 +1346,92 @@ function rhodiola_promo_create_lead( $contact_form ) {
 		  'SOURCE_ID' => 'Промо-страница Родиола',
 		   'PHONE_WORK' => $phoneNumber,
 		  'NAME' => $firstName,
-		  'ASSIGNED_BY_ID' => $assignedUser,
+       );
+
+       // Передаем данные из Contact Form 7 в Bitrix24
+       if (defined('CRM_AUTH')) {
+          $postData['AUTH'] = CRM_AUTH;
+       } else {
+          $postData['LOGIN'] = CRM_LOGIN;
+          $postData['PASSWORD'] = CRM_PASSWORD;
+       }
+
+       $fp = fsockopen("ssl://".CRM_HOST, CRM_PORT, $errno, $errstr, 30);
+       if ($fp) {
+          $strPostData = '';
+          foreach ($postData as $key => $value)
+             $strPostData .= ($strPostData == '' ? '' : '&').$key.'='.urlencode($value);
+
+          $str = "POST ".CRM_PATH." HTTP/1.0\r\n";
+          $str .= "Host: ".CRM_HOST."\r\n";
+          $str .= "Content-Type: application/x-www-form-urlencoded\r\n";
+          $str .= "Content-Length: ".strlen($strPostData)."\r\n";
+          $str .= "Connection: close\r\n\r\n";
+
+          $str .= $strPostData;
+
+          fwrite($fp, $str);
+
+          $result = '';
+          while (!feof($fp))
+          {
+             $result .= fgets($fp, 128);
+          }
+          fclose($fp);
+
+          $response = explode("\r\n\r\n", $result);
+
+          $output = '<pre>'.print_r($response[1], 1).'</pre>';
+       } else {
+          echo 'Connection Failed! '.$errstr.' ('.$errno.')';
+       }
+    }
+
+}
+
+
+add_action( 'wpcf7_mail_sent', 'contact_us_create_lead' );
+function contact_us_create_lead( $contact_form ) {
+
+   // Подключаемся к серверу CRM
+   define('CRM_HOST', 'portal.vitaforestfood.com'); // Ваш домен CRM системы
+   define('CRM_PORT', '443'); // Порт сервера CRM. Установлен по умолчанию
+   define('CRM_PATH', '/crm/configs/import/lead.php'); // Путь к компоненту lead.rest
+
+   // Авторизуемся в CRM под необходимым пользователем:
+   // 1. Указываем логин пользователя Вашей CRM по управлению лидами
+   define('CRM_LOGIN', 'pavlenko');
+   // 2. Указываем пароль пользователя Вашей CRM по управлению лидами
+   define('CRM_PASSWORD', '123@123');
+
+   // Перехватываем данные из Contact Form 7
+   $title = $contact_form->title;
+   $posted_data = $contact_form->posted_data;
+   // Вместо "Контактная форма 1" необходимо указать название вашей контактной формы
+   if ('Contact form' == $title ) {
+       $submission = WPCF7_Submission::get_instance();
+       $posted_data = $submission->get_posted_data();
+	   
+
+       // Далее перехватываем введенные данные в полях Contact Form 7:
+       // 1. Перехватываем поле [your-name]
+       $firstName = $posted_data['your-name'];
+       // 2. Перехватываем поле [your-message]
+       $message = $posted_data['your-message']; 
+	   $companyName = $posted_data['company'];
+	   $senderEmail = $posted_data['your-email'];
+	   $phoneNumber = $posted_data['phone'];
+
+       // Формируем параметры для создания лида в переменной $postData = array
+       $postData = array(
+          // Устанавливаем название для заголовка лида
+          'TITLE' => $companyName,
+          'COMPANY_TITLE' => $companyName,
+          'COMMENTS' => $message,
+		  'EMAIL_WORK' => $senderEmail,
+		  'SOURCE_ID' => 'Форма обратной связи Vitaforest.eu',
+		   'PHONE_WORK' => $phoneNumber,
+		  'NAME' => $firstName,
        );
 
        // Передаем данные из Contact Form 7 в Bitrix24
@@ -1413,7 +1480,7 @@ function rhodiola_promo_create_lead( $contact_form ) {
 /** Отключение выделения текста */ 
 function wpschool_disable_selection_text() {
 
-    if ( !current_user_can( 'manage_options' ) ) {
+    if ( !current_user_can( 'administrator' ) ) {
         echo '<script>';
         echo 'function disableSelection(target){';
         echo 'if (typeof target.onselectstart!="undefined")';
@@ -1431,6 +1498,7 @@ function wpschool_disable_selection_text() {
 
 
 add_action( 'wp_footer', 'wpschool_disable_selection_text' );
+
 
 // Контроллер уведомлений из админ-панели (Кастомизация - Настройка)
 add_action('customize_register', 'vft_notification_controller');

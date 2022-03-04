@@ -1,0 +1,206 @@
+.wptn-time {
+    clear: both;
+    color: #a4a2a2;
+    display: block;
+    font-size: 10px;
+}
+
+.wptn-button-channel .dashicons {
+    vertical-align: text-top;
+}
+
+.wptn-notification-option-item {
+    margin: 0 0 15px 0;
+}
+
+.wptn-message-options {
+    display: none;
+}
+
+#wptn-text-template {
+    width: 100% !important;
+    height: 140px;
+    resize: vertical;
+}
+
+.wptn-error-notice {
+    background-color: #ffd5d5;
+    padding: 7px 7px;
+    display: inline-block;
+    border: 1px solid #ffb7b7;
+    border-radius: 2px;
+    color: #e02222;
+}
+
+.wptn-time {
+    clear: both;
+    color: #a4a2a2;
+    display: block;
+    font-size: 10px;
+}
+
+.wptn-color-green {
+    color: #27bb00;
+}
+
+.wptn-color-red {
+    color: #f10000;
+}
+
+.wptn-button-group .dashicons {
+    vertical-align: text-top;
+}
+
+#wptn-select-subscriber-group {
+    display: none;
+}
+
+#wptn-custom-text {
+    display: none;
+}
+
+#wptn-custom-text textarea {
+    font-size: 12px;
+    width: 100%;
+    height: 114px;
+}
+
+#wptn-custom-text p.description.data, #wptn-custom-text code {
+    font-size: 11px !important;
+}
+
+.wptn-plugin-meta-link span {
+    font-size: 14px;
+    vertical-align: sub;
+}
+
+.wptn-has-credit {
+    color: #3b9d00;
+}
+
+.wptn-no-credit {
+    color: #c20000;
+}
+
+.wptn-premium-tab {
+    color: #F1F1F1;
+    background: #21A8D2;
+}
+
+.wptn-tab-group {
+    border: 1px solid #d8d8d8;
+    display: block;
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
+    margin-top: 18px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.wptn-tab {
+    width: 190px;
+    float: left;
+}
+
+.wptn-tab li {
+    margin: 0;
+}
+
+.wptn-tab li a:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.wptn-tab #wptn-logo {
+    text-align: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.wptn-tab #wptn-logo img {
+    width: 50%;
+}
+
+.wptn-tab li a {
+    display: block;
+    text-decoration: none;
+    padding: 13px 14px;
+    font-weight: bold;
+    margin: 0 -1px 0px 0;
+}
+
+.wptn-tab li .active {
+    background-color: #f4f6ff;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    border-right: 1px solid #f4f6ff;
+}
+
+.wptn-tab-content {
+    background-color: #f4f6ff;
+    display: grid;
+    padding: 6px 33px;
+    border-left: 1px solid #d8d8d8;
+    min-height: 564px;
+}
+
+.rtl .wptn-tab {
+    float: right;
+}
+
+.rtl .wptn-tab-content {
+    border-left: 0px none;
+    border-right: 1px solid #d8d8d8;
+}
+
+.rtl .wptn-tab li a {
+    margin: 0 0 0 -1px;
+}
+
+.rtl .wptn-tab li .active {
+}
+
+/* Privacy Page */
+.privacy_page input[type=tel] {
+    margin-top: 15px;
+    height: 35px;
+    min-width: 250px;
+}
+
+.privacy_page #universal-message-container {
+    padding: 2px 0px 17px 0px;
+}
+
+.privacy_page .text-lead {
+    line-height: 26px;
+    text-align: justify;
+}
+
+.wptn_channels_label {
+    line-height: 19px;
+    left: 0px;
+    top: 6px;
+    width: 81px;
+    height: 19px;
+    display: inline-block;
+}
+
+.wptn_channels_input_text {
+    left: 81px;
+    top: 0px;
+    width: 379px;
+    height: 28px;
+}
+
+.wptn-image-preview-wrapper {
+    padding: 10px 0;
+}
+
+.wptn-video-preview-wrapper {
+    padding: 10px 0;
+}
+
+.wptn-emoji-area textarea {
+    font-family: auto !important;
+}

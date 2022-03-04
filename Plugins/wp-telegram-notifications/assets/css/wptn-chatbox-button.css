@@ -1,0 +1,531 @@
+* {
+    outline: none !important;
+}
+
+.wptn-button-wrapper {
+    width: 50px;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    z-index: 9999;
+}
+
+.wptn-button-wrapper button.wptn-button-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: transparent !important;
+}
+
+.wptn-button-toggle circle {
+    border-radius: 50%;
+
+}
+
+.wptn-button-wrapper button {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wptn-button-wrapper .wptn-button-toggle {
+    width: 50px;
+}
+
+/* Chat */
+
+.wptn-chat-wrapper {
+    background: white;
+    width: 20%;
+    position: fixed;
+    right: 120px;
+    bottom: 40px;
+    transition: 0.5s;
+    max-height: 80%;
+    overflow: hidden;
+    box-shadow: 0 2px 7px -1px #a4a4a4;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.wptn-chat-wrapper.open {
+    right: 120px;
+    bottom: 40px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+.wptn-chat-wrapper .wptn-chat__box {
+}
+
+.wptn-chat-wrapper .wptn-chat__header {
+    display: flex;
+    padding: 25px;
+    border-bottom: 1px solid #cccccc;
+    background-color: #fff;
+}
+
+.close-box-button {
+    position: relative;
+    width: 100%;
+}
+
+.close-box-button button.close-button {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    border: none;
+    background: none;
+    width: 16px;
+    z-index: 99;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.close-box-button .close-button svg {
+    max-width: 100%;
+}
+
+.close-box-button .close-button svg path {
+    transition: 0.1s;
+    fill: #c9c9c9;
+}
+
+.close-box-button .close-button:hover svg path {
+    fill: #a6a6a6;
+}
+
+.wptn-chat-wrapper .wptn-chat__header .wptn-chat__header__avatar {
+    width: 50px;
+    margin-right: 10px;
+
+}
+
+.wptn-chat-wrapper .wptn-chat__header .wptn-chat__header__name {
+    vertical-align: middle;
+    margin: auto 0;
+}
+
+.wptn-chat-wrapper .wptn-chat__header .wptn-chat__header__name h3 {
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+}
+
+.wptn-chat-wrapper .wptn-chat__header .wptn-chat__header__avatar img {
+    vertical-align: middle;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.wptn-chat-wrapper .wptn-chat__body {
+    background: url("../images/wptn-chatbox-bgimg.jpg") no-repeat;
+    background-position: center center;
+    padding-bottom: 10px;
+    overflow: visible;
+    min-height: 40vh;
+    max-height: 380px;
+    /*margin: 0 -18px -18px 0;*/
+}
+
+.wptn-chat__body__messages {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.wptn-chat__body__messages p {
+    margin: 0;
+}
+
+.wptn-chat__body__messages .message {
+    max-width: 80%;
+    font-family: 'Hind Madurai', sans-serif;
+    background: #ffffff;
+    padding: 4px 10px 2px 10px;
+    margin: 15px auto 15px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px -2px #bebebe;
+
+}
+
+.wptn-chat__body__messages .message .name {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    margin: 0 0 6px 0;
+    font-size: 10px;
+    color: #838383;
+}
+
+.wptn-chat__body__messages .message .message-text {
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    font-size: 14px !important;
+}
+
+.wptn-chat__body__messages .message .date {
+    font-size: 9px;
+    font-family: 'Rubik', sans-serif;
+    color: #838383;
+}
+
+.wptn-chat__body__messages .message.message--user {
+    margin-left: auto;
+    margin-right: 10px;
+    justify-self: end;
+    background: #ffffff;
+}
+
+.wptn-chat__footer {
+    background: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+.wptn-form-controls {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+}
+
+
+#message-input {
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 300;
+    height: 36px;
+    border: 0 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    box-shadow: none !important;
+    padding: 5px !important;
+    line-height: 26px !important;
+    background: red !important;
+}
+
+.wptn-form-controls textarea, .wptn-form-control input, #message-input {
+    border: none !important;
+    padding: 25px 15px !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    flex-grow: 1;
+    width: auto !important;
+    color: black;
+    background: unset !important;
+    font-family: 'Rubik', sans-serif !important;
+    margin: 0 !important;
+}
+
+.wptn-form-controls input:disabled {
+    background: none;
+}
+
+.wptn-form-controls .button-submit {
+    margin-right: 5px;
+}
+
+.wptn-form-controls .button-submit .submit-message {
+    padding: 0;
+    border: 0;
+    background: none;
+
+}
+
+.emoji-button {
+    margin: 0 !important;
+}
+
+.emoji-button svg , .submit-message svg {
+    vertical-align: middle !important;
+}
+
+.wptn-form-controls .emoji-button, .wptn-form-controls .button-submit {
+    padding: 0 5px;
+    height: 35px;
+    max-height: 35px;
+    line-height: 25px;
+}
+
+
+.wptn-form-controls .emoji-button, .wptn-form-controls .button-submit button.submit-message {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+
+.submit-message {
+    height: 100%;
+    vertical-align: baseline;
+}
+
+.wptn-form-controls svg, .wptn-form-controls .button-submit .submit-message svg {
+    vertical-align: unset;
+    width: 25px;
+}
+
+.wptn-form-controls svg path, .wptn-form-controls .button-submit .submit-message svg path {
+    fill: #a4a4a4;
+    transition: 0.2s;
+}
+
+.wptn-form-controls .emoji-button:hover svg path, .wptn-form-controls .button-submit .submit-message:hover svg path {
+    fill: #858585;
+}
+
+@media (min-width: 300px) and (max-width: 840px) {
+
+    .wptn-chat-wrapper {
+        max-width: 100%;
+        width: 100%;
+        right: 0 !important;
+        bottom: 0 !important;
+        max-height: 100%;
+        height: 100vh;
+        z-index: -1;
+        visibility: hidden;
+
+
+    }
+
+    .wptn-chat-wrapper.open {
+        z-index: 99999;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .wptn-chat__body__messages, .wptn-chat__body {
+        height: 100%;
+
+    }
+
+    .wptn-chat__body {
+        height: 100%;
+        max-height: 100% !important;
+        margin: 0 !important;
+    }
+
+    .wptn-chat__body__messages {
+        margin-right: 0;
+        max-height: 100%;
+    }
+
+    .wptn-chat__box {
+        height: 100%;
+        background: white;
+        padding-bottom: 20px;
+    }
+
+    .wptn-chat__footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .wptn-button-wrapper {
+        bottom: 20px;
+        right: 20px;
+
+    }
+}
+
+
+/* User info form */
+
+.wptn-user-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 46, 46, 0.56);
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wptn-user-info .user-info-form {
+    width: 90%;
+    background: white;
+    border: #858585;
+    border-radius: 10px;
+}
+
+.wptn-user-info .user-info-form__header {
+    border-bottom: 1px solid #efefef;
+    padding: 15px 5px;
+}
+
+.wptn-user-info .user-info-form__header h5 {
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.wptn-user-info .user-info-form__body {
+    padding: 10px;
+}
+
+.wptn-user-info .user-info-form__body p {
+    font-size: 11px;
+    margin: 0;
+}
+
+.wptn-user-info .user-info-form__body form {
+    margin-top: 10px;
+}
+
+.wptn-user-info .user-info-form__body form input {
+    padding: 7px ;
+    border: 1px solid #eeeeee !important;
+    border-radius: 3px;
+    margin: 5px 0;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    font-size: 13.3px;
+    line-height: 15px !important;
+    height: unset !important;
+    background: none;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+.wptn-user-info .user-info-form__body form input:focus , .wptn-user-info .user-info-form__body form input:active {
+    border-color: #4595ee !important;
+}
+
+.wptn-user-info .user-info-form__body form input[type="submit"] {
+    background-color: #0a5fee !important;
+    border: none;
+    color: white;
+    border-radius: 3px !important;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 8px !important;
+    margin: 0 !important;
+    font-size: 13.3px;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.wptn-user-info .user-info-form__body form input[type="submit"] {
+    background: #0a5fee;
+    border: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 8px;
+    font-size: 13.3px;
+    letter-spacing: normal;
+    font-weight: normal;
+}
+
+.wptn-user-info .user-info-form__body form input[type="submit"]:hover {
+    background: #0f84ee;
+}
+
+.wptn-user-info .wp-telegram-logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wptn-user-info .wp-telegram-logo a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+}
+
+.wptn-user-info .wp-telegram-logo a img {
+    width: 20px;
+}
+
+
+/* Tooltip Styles */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    font-size: 10px;
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -70px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Emoji picker*/
+
+.emoji-picker {
+    left: unset !important;
+    top: unset !important;
+    bottom: 80px !important;
+    right: 60px !important;
+    position: fixed !important;
+}
+
+.emoji-selector.nav-tabs {
+    display: none !important;
+}
+
+.emoji-picker .emoji-image {
+    line-height: 4px !important;
+}
+
+.emoji-picker .tab-content > .tab-pane {
+    display: block;
+}
+
+@media (min-width: 300px) and (max-width: 840px) {
+
+    .emoji-picker {
+        bottom: 50px !important;
+    }
+}

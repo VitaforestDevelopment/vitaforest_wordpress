@@ -17815,3 +17815,6 @@ cursor: pointer;
 		line-height: 30px;
 	}
 	}
+	.shop_table.b2bking_shop_table{
+		display: none;
+	}

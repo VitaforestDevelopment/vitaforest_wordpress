@@ -23,10 +23,12 @@
 
     $user_id = $order->get_user_id();
     $user_country_get = $user->billing_country;
-		$country_arr = WC()->countries->get_countries();
-		$full_country_name = $country_arr[$user_country_get];
+	$user_country_ship = $user->shipping_country;
+	$country_arr = WC()->countries->get_countries();
+	$full_country_name = $country_arr[$user_country_get];
+	$full_country_shipping = $country_arr[$user_country_ship];
     $vatNum = get_user_meta($user_id, b2bking_custom_field_15829);
-		$codeNum = get_user_meta($user_id, b2bking_custom_field_15821);
+	$codeNum = get_user_meta($user_id, b2bking_custom_field_15821);
       
       // Get the Customer billing email
       $billing_email  = $order->get_billing_email();
@@ -77,17 +79,17 @@
               </td>
               <td><?php $this->invoice_date(); ?></td>
               <td><?php $this->invoice_number(); ?></td>
-              <td class="table__price"><?php echo $item['order_price']; ?></td>
+              <td>100%</td>
             </tr>
             <tr>
               <td></td>
-              <td>a</td>
+              <td></td>
               <td></td>
               <td></td>
             </tr>
             <tr>
               <td></td>
-              <td class="table__header">DUE DATE</td>
+              <td></td>
               <td></td>
               <td></td>
             </tr>
@@ -114,8 +116,8 @@
               <td><?php echo $item['name']; ?></td>
               <td><?php 
               $baseVal = $item['order_price'];
-              $baseVal = preg_replace('/[^0-9 .]/', $baseVal);
-              $resultVal = $baseVal/$item['quantity'];
+              $newVal = preg_replace('/[^0-9 .]/', '', $baseVal);
+              $resultVal = $newVal/$item['quantity'];
               echo '€'.$resultVal;
               ?></td>
               <td><?php echo $item['quantity']; ?></td>
@@ -127,14 +129,13 @@
       </div>
       <table class="hz-kak-nazvat">
         <tr class="hz-kak-nazvat-row">
-        <td class="hz-kak-nazvat__left" style="font-size: 14px;">
-          DDP Leitenweg <br />
-          4a, 82386 Huglfing <br />
-          Net Weight: 100 kg (10 boxes) <br />
-          Gross Weight: 120 kg <br />
-          Number of packages: <br />
-          1 Pallets 1.2*0.8*0.45 <br />
+        <td class="hz-kak-nazvat__left">
+			<? echo $shipping_address_1; ?> <br />
+          	<? echo $shipping_address_2; ?> <br />
+			<? echo $billing_postcode; ?> <br />
+			<? echo $full_country_shipping; ?>
         </td>
+		<td></td>
         <td>
                   <table class="hz-kak-nazvat__table hz-table">
           <tr>
@@ -143,7 +144,7 @@
           </tr>
           <tr>
             <th class="hz-table__header">Total</th>
-            <td class="hz-table__content">0</td>
+            <td class="hz-table__content"><?php echo $item['order_price']; ?></td>
           </tr>
           <tr>
             <th class="hz-table__header">Amount Pal</th>
@@ -151,11 +152,11 @@
           </tr>
           <tr>
             <th class="hz-table__header">Deposit request (EUR)</th>
-            <td class="hz-table__content">0</td>
+            <td class="hz-table__content">100%</td>
           </tr>
           <tr>
             <th class="hz-table__header">Deposit Due (EUR</th>
-            <td class="hz-table__content">0</td>
+            <td class="hz-table__content">100%</td>
           </tr>
         </table>
         </td>
@@ -166,7 +167,7 @@
       <table class="subtotal">
         <tr>
           <th class="subtotal__header">SUBTOTAL</th>
-          <td class="subtotal__content">0</td>
+          <td class="subtotal__content"><?php echo $item['order_price']; ?></td>
         </tr>
       </table>
     </div>

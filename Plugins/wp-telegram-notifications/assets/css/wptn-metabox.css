@@ -1,0 +1,50 @@
+.wptn-wrapper {
+    padding: 10px;
+}
+
+.wptn-wrapper .wptn-options {
+    border: 1px solid #e3e3e3;
+    margin-bottom: 20px;
+}
+
+.wptn-wrapper .wptn-options .wptn-options__header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    align-items: center;
+}
+
+.wptn-wrapper .wptn-options .wptn-options__header h4 {
+    margin: 0;
+    vertical-align: middle;
+}
+
+.wptn-wrapper .wptn-options .wptn-options__header .wptn-arrow {
+    vertical-align: middle;
+    transition: 0.25s;
+    opacity: 0.6;
+}
+
+.wptn-wrapper .wptn-options .wptn-options__header .wptn-arrow.open {
+    transform: rotateX(180deg);
+}
+
+.wptn-wrapper .wptn-options .wptn-options__header .wptn-arrow img{
+    vertical-align: middle;
+}
+
+.wptn-wrapper .wptn-options .wptn-options__body {
+    display: none;
+    padding: 15px 20px;
+    margin-top: 0;
+}
+
+.wptn-wrapper .wptn-options .wptn-options__body .wptn-input-box {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.wptn-wrapper .wptn-options .wptn-options__body .wptn-input-box select{
+    margin-left: 10px;
+}

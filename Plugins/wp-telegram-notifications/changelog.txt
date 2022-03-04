@@ -1,0 +1,51 @@
+v2.0.5 (2021-04-05)
+- Compatibility the libraries with PHP v7.4
+- Supported comment URL in new comment notification
+
+v2.0.4 (2020-10-11)
+- Fixed: jQuery issue in edit post/page
+- Improvement: Array data variable values for sending a message through CF7
+
+v2.0.3 (2020-04-19)
+- Improved: GravityForms notice.
+- Supported: HTML and GoogleMap for sending message.
+- Updated: WooCommerce variables.
+- Fixed: fixed variables data in cf7 message.
+
+v2.0.2 (2019-07-03)
+- Added private channels and groups support, added documentation on website too.(https://wp-telegram.com/resources/channels/)
+- Added template functions and documentation available now on website.(https://wp-telegram.com/documentation/)
+- Added modifying messages filter on sending any type messages(photo,video,message).(https://wp-telegram.com/resources/wp_telegram_msg/)
+
+v2.0.1 (2019-06-12)
+- Fixed issue with PHP version 5.6.
+
+v2.0 (2019-05-27)
+- Added Chat box button for WordPress integration with dynamic options, now you can receive messages from your visitors with a box like telegram software with this feature.
+- Added Send video message support for WordPress publish posts integration with before and after position.
+- Added before and after text content photo message position.
+- Added Emoji list to all text template message contents, even send message page.
+- Improved the structure of plugin.
+- Improved Outbox page.
+- Improved WP-Telegram Send Message Metabox.
+- Improved Outbox page
+
+v1.0.4 (2018-10-10)
+- Improved the update checker.
+
+v1.0.3 (2018-10-05)
+- Added auto update by licence key.
+- Updated the setting page style.
+- Updated the libraries to latest version.
+
+v1.0.2 (2017-06-08)
+- WordPress 4.8 compatibility
+- Fixes issue in cf7 form when the fields has array data
+
+v1.0.1 (2014-02-23)
+- Fixes conflict in meta box with another plugin
+- Improvement including file
+- Supported thumbnail in post notification
+
+v1.0.0 (2014-02-11)
+- First release.

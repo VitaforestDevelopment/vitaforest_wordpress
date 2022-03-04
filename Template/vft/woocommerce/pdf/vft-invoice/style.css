@@ -1,6 +1,5 @@
 body {
 	margin: 0 auto;
-	padding-top: 40px;
 	position: relative;
   }
   
@@ -69,7 +68,6 @@ body {
   }
   
   .hz-kak-nazvat {
-	margin-top: 80px;
 	width: 100%;
   }
   
@@ -85,6 +83,9 @@ body {
 	border-bottom: 2px solid #848aa5;
 	width: 50%;
   }
+.hz-kak-nazvat__left {
+  width: 65%;
+}
   
   .hz-table__header_first {
 	border-top: 2px solid #848aa5;
