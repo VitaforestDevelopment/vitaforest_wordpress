@@ -121,10 +121,20 @@ function sku_drawer(){
 	}
 }
 ?>
+<? 
+if (!function_exists('hideNums')){
+function hideNums(){
+global $product;
+if(has_term('soon', 'product_cat')){
+	echo 'style="display: none;"';
+}
+}
+}
+?>
 <div class="product__purchase-wrapper">
 <p class="product__sku product__sku-bottom <? logged_sku(); ?>">SKU: <? sku_drawer(); ?></p>
 	<? authquote(); ?>
-<div class="number <? hide_qty_editor(); ?> <? authquote2(); ?>">
+<div class="number <? hide_qty_editor(); ?> <? authquote2(); ?>" <? hideNums(); ?>>
 	<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
 	<input class="product-quantity" type="number" value="<? if ($dvalue <= 0){echo '1';}else{echo $dvalue;} ?>" step="<? if ($svalue <= 0){echo '1';}else{echo $svalue;} ?>" min="<? if ($dvalue <= 0){echo '1';}else{echo $dvalue;} ?>"/>
 	<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
