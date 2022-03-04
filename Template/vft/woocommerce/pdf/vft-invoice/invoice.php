@@ -81,19 +81,19 @@
             </tr>
             <tr>
               <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
+              <td>a</td>
               <td></td>
               <td></td>
             </tr>
             <tr>
               <td></td>
+              <td class="table__header">DUE DATE</td>
               <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>00/00/0000</td>
               <td></td>
               <td></td>
             </tr>
@@ -114,8 +114,8 @@
               <td><?php echo $item['name']; ?></td>
               <td><?php 
               $baseVal = $item['order_price'];
-              $newVal = preg_replace('/[^0-9 .]/', '', $baseVal);
-              $resultVal = $newVal/$item['quantity'];
+              $baseVal = preg_replace('/[^0-9 .]/', $baseVal);
+              $resultVal = $baseVal/$item['quantity'];
               echo '€'.$resultVal;
               ?></td>
               <td><?php echo $item['quantity']; ?></td>
@@ -127,20 +127,46 @@
       </div>
       <table class="hz-kak-nazvat">
         <tr class="hz-kak-nazvat-row">
-        <td class="hz-kak-nazvat__left" style="width: 70%;">
+        <td class="hz-kak-nazvat__left" style="font-size: 14px;">
+          DDP Leitenweg <br />
+          4a, 82386 Huglfing <br />
+          Net Weight: 100 kg (10 boxes) <br />
+          Gross Weight: 120 kg <br />
+          Number of packages: <br />
+          1 Pallets 1.2*0.8*0.45 <br />
         </td>
         <td>
                   <table class="hz-kak-nazvat__table hz-table">
           <tr>
-            <th class="hz-table__header">Total</th>
-            <td class="hz-table__content">&nbsp;<?php echo $item['order_price']; ?></td>
+            <th class="hz-table__header hz-table__header_first">Tax</th>
+            <td class="hz-table__content hz-table__content_first">0</td>
           </tr>
-		<tr>          <th class="subtotal__header">SUBTOTAL</th>
-          <td class="subtotal__content">&nbsp;<?php echo $item['order_price']; ?></td>
-					  </tr>
+          <tr>
+            <th class="hz-table__header">Total</th>
+            <td class="hz-table__content">0</td>
+          </tr>
+          <tr>
+            <th class="hz-table__header">Amount Pal</th>
+            <td class="hz-table__content">0</td>
+          </tr>
+          <tr>
+            <th class="hz-table__header">Deposit request (EUR)</th>
+            <td class="hz-table__content">0</td>
+          </tr>
+          <tr>
+            <th class="hz-table__header">Deposit Due (EUR</th>
+            <td class="hz-table__content">0</td>
+          </tr>
         </table>
         </td>
 
         </tr>
       </div>
+
+      <table class="subtotal">
+        <tr>
+          <th class="subtotal__header">SUBTOTAL</th>
+          <td class="subtotal__content">0</td>
+        </tr>
+      </table>
     </div>
