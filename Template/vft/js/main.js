@@ -769,3 +769,10 @@ if (quoteInProductPage) {
   let oldForm = document.querySelector('.hide_this');
   oldForm.style.display = 'none';
 }
+
+let addToQuoteNoti = document.querySelector('.afrfqbt_single_page.button');
+if (addToQuoteNoti) {
+  addToQuoteNoti.addEventListener('click', () => {
+    createNotificationOnce('Request', 'Succesfully added to request', 'Ok', 'add-to-request-noti');
+  })
+}
