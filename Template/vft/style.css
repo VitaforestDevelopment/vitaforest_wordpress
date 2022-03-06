@@ -17866,4 +17866,9 @@ cursor: pointer;
 		height: 100%;
 		width: 85%;
 	}
+	.order-iteam__btn.btn.invoice{
+		position: absolute;
+			right: -30px;
+			width: 28px;
+		}
 	}
