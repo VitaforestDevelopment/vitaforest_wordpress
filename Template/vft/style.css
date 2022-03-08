@@ -17833,6 +17833,7 @@ cursor: pointer;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 55px;
+		align-items: center;
 	}
 	.ukraine .text{
 		font-size: 14px;
@@ -17844,6 +17845,7 @@ cursor: pointer;
 	.ukraine-flag{
 	margin-top: 10px;
 	height: 100px;
+	max-width: 200px;
 	}
 	@media screen and (min-width: 1128px){
 		.ukraine{
