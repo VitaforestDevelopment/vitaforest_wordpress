@@ -17874,3 +17874,16 @@ cursor: pointer;
 			width: 28px;
 		}
 	}
+.ukraine{
+	display: none !important;
+}
+.rc-anchor.rc-anchor-invisible.rc-anchor-light {
+	display: none !important;
+}
+.grecaptcha-badge{
+	display: none !important;
+}
+
+.shop_table.b2bking_shop_table{
+	display: none !important;
+}

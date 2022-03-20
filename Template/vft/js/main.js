@@ -710,7 +710,7 @@ const categoryDescriptionContainer = document.querySelector(
 if (categoryDescriptionContainer != null) {
   let currentPageUri = document.location.pathname;
   switch (currentPageUri) {
-    case "/shop/industry-food-supplements/":
+    case "/en/shop/industry-food-supplements/":
       categoryDescriptionContainer.innerHTML = foodSupplementsFull;
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
@@ -718,7 +718,7 @@ if (categoryDescriptionContainer != null) {
           '...</br><button onclick="categoryDescriptionContainer.innerHTML = foodSupplementsFull;" class="read-description">Read more</button>';
       });
       break;
-    case "/shop/industry-cosmetics/":
+    case "/en/shop/industry-cosmetic/":
       categoryDescriptionContainer.innerHTML = cosmeticsFull;
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
@@ -726,7 +726,7 @@ if (categoryDescriptionContainer != null) {
           '...</br><button onclick="categoryDescriptionContainer.innerHTML = cosmeticsFull;" class="read-description">Read more</button>';
       });
       break;
-    case "/shop/industry-pharmaceutical-industry/":
+    case "/en/shop/industry-pharmaceutical-industry/":
       categoryDescriptionContainer.innerHTML = pharmaceuticalFull;
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
@@ -734,7 +734,7 @@ if (categoryDescriptionContainer != null) {
           '...</br><button onclick="categoryDescriptionContainer.innerHTML = pharmaceuticalFull;" class="read-description">Read more</button>';
       });
       break;
-    case "/shop/industry-healthy-nutrition/":
+    case "/en/shop/industry-healthy-nutrition/":
       categoryDescriptionContainer.innerHTML = nutritionFull;
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
@@ -742,7 +742,7 @@ if (categoryDescriptionContainer != null) {
           '...</br><button onclick="categoryDescriptionContainer.innerHTML = nutritionFull;" class="read-description">Read more</button>';
       });
       break;
-    case "/shop/industry-feed-additives/":
+    case "/en/shop/industry-feed-additives/":
       categoryDescriptionContainer.innerHTML = additivesFull;
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =
@@ -750,7 +750,7 @@ if (categoryDescriptionContainer != null) {
           '...</br><button onclick="categoryDescriptionContainer.innerHTML = additivesFull;" class="read-description">Read more</button>';
       });
       break;
-    case "/shop/industry-food-and-beverages/":
+    case "/en/shop/industry-food-and-beverages/":
       categoryDescriptionContainer.innerHTML = beveragesFull;
       document.addEventListener("scroll", () => {
         categoryDescriptionContainer.innerHTML =

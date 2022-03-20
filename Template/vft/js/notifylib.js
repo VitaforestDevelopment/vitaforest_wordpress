@@ -118,5 +118,6 @@ function createNotificationAuth(notificationName, notificationText, actionName, 
 
 // Уведомления по-умолчанию
 
-createNotificationNonAuth('Notice', 'Vitaforest.eu uses cookies to provide necessary website functionality, improve your experience and analyze our traffic. By using our website, you agree to our <a href="/privacy-policy">Privacy Policy</a> and our cookies usage.', 'Accept cookies', 'cookienotify');
+createNotificationNonAuth('Notice', 'Vitaforest.eu uses cookies to provide necessary website functionality, improve your experience and analyze our traffic. By using our website, you agree to our <a style="color: blue; text-decoration-line: underline;" href="/cookie-policy">Cookie Policy</a> and our cookies usage.', 'Accept cookies', 'cookienotify');
+createNotificationNonAuth('Notice', 'Please <a href="/registration">register</a> or <a href="/my-account">login</a> and you will be able to see prices, an extended description of the goods, as well as technical documentation.', 'Ok', 'cookienotify');
 
