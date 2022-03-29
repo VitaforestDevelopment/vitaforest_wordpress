@@ -137,8 +137,10 @@ showUserMenu.mouseover = function () {
 showUserMenu.onclick = function () {
   userMenu.classList.toggle("user-menu_active");
   userMenuCont.classList.toggle("user-menu__container_active");
-  backgroundLayer.classList.toggle("bg-layer_active");
-  body.classList.toggle("jija");
+  if (viewPort < 1128) {
+    backgroundLayer.classList.toggle("bg-layer_active");
+    body.classList.toggle("jija");
+  }
 };
 
 userMenuClose.onclick = function () {
