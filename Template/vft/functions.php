@@ -8,6 +8,9 @@ function vft_register_basics(){
 	if(is_page('rhodiola-promo') or is_page('chaga-promo')){
 	wp_enqueue_style( 'vft-style', get_template_directory_uri() . "/landstyle.css", array(), $version, 'all' );	
 	}
+    if(is_page('shop') or is_page('front-page')){
+    wp_enqueue_style( 'vft-style-1', get_template_directory_uri() . "/styles/style1.css", array(), $version, 'all' );
+    }
 	else{
     wp_enqueue_style( 'vft-style', get_template_directory_uri() . "/style.css", array(), $version, 'all' );
 	}
