@@ -8,6 +8,9 @@ function vft_register_basics(){
 	if(is_page('rhodiola-promo') or is_page('chaga-promo')){
 	wp_enqueue_style( 'vft-style', get_template_directory_uri() . "/landstyle.css", array(), $version, 'all' );	
 	}
+	if(is_page('rhodiola-rosea')){
+		wp_enqueue_style('promo-style', get_template_directory_uri() . "/promo-spain.css", array(), $version, 'all' );
+	}
 	else{
     wp_enqueue_style( 'vft-style', get_template_directory_uri() . "/style.css", array(), $version, 'all' );
 	}
@@ -45,7 +48,7 @@ function vft_yandexanalitic() {?>
 
 add_action('wp_head', 'vft_js_landjquery');
 function vft_js_landjquery(){
-if(is_page('rhodiola-promo') or is_page('chaga-promo')){
+if(is_page('rhodiola-promo') or is_page('chaga-promo') or is_page('rhodiola-rosea')){
 echo '<script type="text/javascript" src="'.get_template_directory_uri().'/js/jquery.js"></script>';
 }
 }
@@ -223,7 +226,7 @@ echo '<script type="text/javascript" src="'.get_template_directory_uri().'/js/sl
 // Load slider script
 add_action('vft_js_landslick', 'vft_js_landslick');
 function vft_js_landslick(){
-if(is_page('rhodiola-promo') or is_page('chaga-promo'))
+if(is_page('rhodiola-promo') or is_page('chaga-promo') or is_page('rhodiola-rosea'))
 echo '<script type="text/javascript" src="'.get_template_directory_uri().'/js/landslick.js"></script>';
 }
 

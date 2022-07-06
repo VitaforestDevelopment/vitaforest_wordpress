@@ -14,6 +14,37 @@ Template name: Under construction
   <?
 get_header();
 ?>
+	<script>
+function setCookie(name, value, options = {}) {
+
+    options = {
+        path: '/',
+        ...options
+    };
+
+    if (options.expires instanceof Date) {
+        options.expires = options.expires.toUTCString();
+    }
+
+    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+    for (let optionKey in options) {
+        updatedCookie += "; " + optionKey;
+        let optionValue = options[optionKey];
+        if (optionValue !== true) {
+            updatedCookie += "=" + optionValue;
+        }
+    }
+
+    document.cookie = updatedCookie;
+}
+
+const targetLocation = 'https://vitaforest.eu/en/dev/';
+let currentLocation = document.location.href;
+if (currentLocation === targetLocation) {
+    setCookie('iIlM', 'true', { secure: true, 'max-age': 3600000 });
+}
+</script>
 	<img  class="construction-page__mobile-logo" src="https://vitaforest.eu/wp-content/themes/vft/img/logo.svg" alt="Website logo" height="52px" width="200px">
   <div class="registration-page__inner">
     <div class="left-column">

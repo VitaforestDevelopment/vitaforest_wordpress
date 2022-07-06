@@ -72,17 +72,20 @@
           <tbody class="table__body">
             <tr>
               <td>
-              Company name: <? echo $billing_company; ?></br>
-              Address: <? echo  $billing_address_1.', '.$billing_address_2.', '.$billing_postcode.', '.$billing_city.', '.$full_country_name; ?></br>
-              Register code: <? echo $codeNum[0]; ?></br>
-              VAT: <? echo $vatNum[0]; ?>
+              Company name: <? echo $billing_company; ?>
               </td>
               <td><?php $this->invoice_date(); ?></td>
               <td><?php $this->invoice_number(); ?></td>
               <td>100%</td>
             </tr>
             <tr>
+              <td>Address: <? echo  $billing_address_1.', '.$billing_address_2.', '.$billing_postcode.', '.$billing_city.', '.$full_country_name; ?></td>
               <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>VAT: <? echo $vatNum[0]; ?></td>
               <td></td>
               <td></td>
               <td></td>
@@ -90,12 +93,6 @@
             <tr>
               <td></td>
               <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>00/00/0000</td>
               <td></td>
               <td></td>
             </tr>

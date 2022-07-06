@@ -1,6 +1,6 @@
 <?
 /*
-* Template Name: Privacy
+* Template Name: Front page
 */
 ?>
 <? get_header();?>
@@ -10,7 +10,7 @@
 <p class="text">We are very upset by what is happening in Ukraine and on the international market, we regret that civilians are involved in the conflict caused by the games in the big political arena. VITAFOREST team does not endorse such a way of solving problems. The situation starting to become more complicated, but we hope that our cooperation will continue. For several years we operate on the international market by supplying genuinely high-quality ingredients to make life healthier for all the people around the globe, VITAFOREST is absolutely friendly to all countries and nations. We value the fact that we managed to build a mutually beneficial relationship with you. Let me express a hope that we can get through this together.</p></div></div>
 <main class="main-content">
 	<h1 hidden="true">
-		Vitaforest - Natural products from Siberia
+		Vitaforest - Natural extracts and powders
 	</h1>
     <div class="slider head-slider">
       <div class="slider__container">
@@ -50,7 +50,7 @@
           <svg width="54" height="54" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M46.775 5.273A5.28 5.28 0 0041.502 0H16.717a5.28 5.28 0 00-5.274 5.273l.001 5.81c.002.192.055.382.16.55l2.287 3.66-1.646 2.634a5.271 5.271 0 00-.802 2.794v1.413a1.056 1.056 0 002.11 0v-1.412c0-.594.166-1.173.48-1.678l1.686-2.696H42.5l1.686 2.697c.314.504.481 1.083.481 1.676v1.797H26.789c-.582 0-1.055.472-1.055 1.054v22.676c0 .582.473 1.055 1.055 1.055h17.877v1.424a3.176 3.176 0 01-3.164 3.164H16.714a5.245 5.245 0 001.058-3.164V41.87a5.282 5.282 0 00-4.22-5.167v-5.078a1.056 1.056 0 00-2.109 0v5.078a5.282 5.282 0 00-4.218 5.167v6.856A5.28 5.28 0 0012.498 54c.75 0 1.462-.158 2.108-.441l.058.026a5.22 5.22 0 002.053.415h24.785a5.253 5.253 0 003.728-1.545 5.253 5.253 0 001.545-3.728V20.72c0-.989-.277-1.956-.801-2.794l-1.646-2.634 2.287-3.66c.105-.168.157-.358.16-.55v-5.81zM9.334 41.871a3.168 3.168 0 013.164-3.164 3.168 3.168 0 013.164 3.164v2.373H9.334v-2.373zm0 6.856v-2.373h6.328v2.373a3.168 3.168 0 01-3.164 3.164 3.168 3.168 0 01-3.164-3.164zm18.51-3.534V24.627h16.822v20.566H27.844zM13.553 5.273a3.168 3.168 0 013.164-3.164h24.785a3.168 3.168 0 013.164 3.164v4.747H13.553V5.273zm2.166 8.965l-1.318-2.11h29.417l-1.319 2.11H15.72z" fill="#282C32"/><path d="M12.498 27.934a1.055 1.055 0 100-2.11 1.055 1.055 0 000 2.11zm28.986.894a1.055 1.055 0 00-2.109 0c0 .732-.09 1.38-.236 1.954a5.608 5.608 0 00-6.615.97c-.946.945-1.44 2.623-1.508 5.13a23.98 23.98 0 00.138 3.24c.06.48.438.858.918.917.044.006.81.099 1.872.134.246.008 1.169.01 1.368.005 2.506-.07 4.184-.563 5.13-1.509a5.606 5.606 0 00.448-7.41c.361-.952.594-2.087.594-3.43zm-2.533 9.35c-.853.852-3.65 1.004-5.784.848-.156-2.135-.004-4.93.849-5.783a3.495 3.495 0 014.273-.518c-.91 1.378-2.075 1.917-2.163 1.956a1.055 1.055 0 00.832 1.938c.104-.044 1.526-.67 2.749-2.244a3.494 3.494 0 01-.756 3.803z" fill="#282C32"/></svg>
           <p class="categories-link__title">Food supplements</p>
         </a>
-        <a href="/shop/industry-cosmetics/" class="categories-links__item categories-link">
+        <a href="/shop/industry-cosmetic/" class="categories-links__item categories-link">
           <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.6801 23.3732H21.1881C21.3874 23.3732 21.5786 23.4524 21.7195 23.5933C21.8604 23.7342 21.9397 23.9254 21.9397 24.1247C21.9397 24.324 21.8604 24.5152 21.7195 24.6561C21.5786 24.797 21.3874 24.8762 21.1881 24.8762H19.6801C19.4808 24.8762 19.2896 24.797 19.1486 24.6561C19.0077 24.5152 18.9286 24.324 18.9286 24.1247C18.9286 23.9254 19.0077 23.7342 19.1486 23.5933C19.2896 23.4524 19.4808 23.3732 19.6801 23.3732Z" fill="#303236"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9581 41.9962C23.9581 41.7968 23.879 41.6057 23.738 41.4647C23.597 41.3239 23.406 41.2447 23.2067 41.2447C22.1079 41.2417 21.0257 41.5119 20.0573 42.0308C19.6132 40.818 18.7585 39.7987 17.6414 39.15C17.527 39.0836 17.3971 39.0486 17.2649 39.0486C17.1325 39.0486 17.0026 39.0836 16.8883 39.15C15.7715 39.7989 14.9172 40.8183 14.4736 42.0313C13.5052 41.5123 12.423 41.2421 11.3242 41.2451C11.1249 41.2451 10.9339 41.3243 10.7929 41.4651C10.6519 41.6061 10.5728 41.7973 10.5728 41.9966V42.097C10.5726 43.6038 11.0839 45.066 12.0229 46.2444C11.4673 46.6032 11.0048 47.0888 10.6737 47.6614C10.6075 47.7758 10.5727 47.9056 10.5727 48.0378C10.5727 48.1699 10.6075 48.2998 10.6737 48.4142C10.995 48.9714 11.4407 49.4468 11.9759 49.8035C12.5112 50.1601 13.1216 50.3883 13.7596 50.4702C14.3975 50.5521 15.0457 50.4857 15.6539 50.2758C16.2618 50.066 16.8132 49.7185 17.2649 49.2605C17.7165 49.7185 18.2678 50.0659 18.8757 50.2757C19.4838 50.4855 20.132 50.552 20.77 50.4701C21.4079 50.3881 22.0183 50.1599 22.5535 49.8032C23.0887 49.4465 23.5343 48.971 23.8555 48.4138C23.9217 48.2994 23.9565 48.1697 23.9565 48.0376C23.9565 47.9054 23.9217 47.7758 23.8555 47.6614C23.5245 47.0889 23.0622 46.6032 22.5067 46.2444C23.4461 45.066 23.9578 43.6036 23.9581 42.0967V41.9962ZM20.3858 43.5819C20.9966 43.1831 21.6856 42.9196 22.4067 42.809C22.2884 43.6292 21.9772 44.4097 21.4987 45.0863C21.0202 45.7629 20.388 46.3165 19.6541 46.7012C19.7137 46.6697 19.7659 46.5223 19.8037 46.4155C19.8174 46.3769 19.8291 46.3436 19.8387 46.323C19.9507 46.0848 20.0482 45.8402 20.1308 45.5903C20.3385 44.9423 20.4244 44.2613 20.3842 43.5819H20.3858ZM17.2649 40.6958C17.7681 41.0681 18.177 41.5531 18.4587 42.112C18.7406 42.6709 18.8874 43.2881 18.8874 43.9142C18.8874 44.54 18.7406 45.1573 18.4587 45.7162C18.177 46.2751 17.7681 46.7601 17.2649 47.1324C16.7615 46.7603 16.3525 46.2751 16.0707 45.7162C15.7888 45.1573 15.642 44.54 15.642 43.9142C15.642 43.2881 15.7888 42.6709 16.0707 42.112C16.3525 41.5531 16.7615 41.0681 17.2649 40.6958ZM14.146 43.5819C14.1044 44.2565 14.1884 44.9328 14.3937 45.5765C14.4791 45.8451 14.5857 46.1065 14.7123 46.3582C14.7717 46.4682 14.825 46.5815 14.8721 46.6973C14.1393 46.3123 13.5081 45.7591 13.0305 45.0831C12.5528 44.407 12.2421 43.6274 12.1239 42.8081C12.8453 42.919 13.5348 43.1828 14.146 43.5819ZM14.295 49.0003C13.9026 48.9993 13.5152 48.9126 13.16 48.7461C12.8047 48.5796 12.4902 48.3372 12.2384 48.0362C12.4797 47.7481 12.7789 47.514 13.1167 47.3492C13.877 47.9469 14.7566 48.3748 15.6962 48.6044C15.275 48.863 14.7905 49.0001 14.2962 49.0003H14.295ZM20.2348 49.0003C19.74 48.9998 19.255 48.862 18.8339 48.6023C19.7735 48.3727 20.653 47.9448 21.4134 47.3471C21.7513 47.5117 22.0505 47.7458 22.2915 48.0341C22.0401 48.3356 21.7256 48.5784 21.3703 48.7453C21.0149 48.9122 20.6274 48.9992 20.2348 49.0003Z" fill="#303236"/>
@@ -100,7 +100,7 @@
       <ul class="advantages__list">
         <li class="advantages__item advantage">
           <p class="advantage__title">PURE QUALITY</p>
-          <p class="advantage__subtitle">Wild raw materials from Siberia</p>
+          <p class="advantage__subtitle">Wild raw materials</p>
         </li>
         <li class="advantages__item advantage">
           <p class="advantage__title">THE STOCK OF FINISHED PRODUCTS</p>
@@ -138,13 +138,13 @@
       <section class="about">
        <h2 class="title">About us</h2>
         <p class="about__content">VitaForest™ is a young international company, which provides food, cosmetic and
-          pharmaceutical industries with natural dehydrated extracts and powders originated from wild Siberian nature.
+          pharmaceutical industries with natural dehydrated extracts and powders originated from wild nature.
 
           We offer functional mushroom, flower, hip, roots and valuable herb extracts, which are cautiously foraged,
           gently processed by ourselves in order to preserve as much healthful benefits. Extracts from chaga, rhodiola,
           coneflower, elderflower, sea buckthorn, blackberry, wild rose and others successfully passed quality tests in
-          numerous countries and obtained <span class="about__full-text">analysis certificates and technical
-            documentation.
+          numerous countries and obtained analysis certificates and technical
+            documentation.<span class="about__full-text">
 
             On regular basis we supply natural wild extracts to Japan, Great Britain, Italy, Spain, Estonia, Germany,
             France, Finland and other EU countries. We guarantee to our clients swift deliveries and full support

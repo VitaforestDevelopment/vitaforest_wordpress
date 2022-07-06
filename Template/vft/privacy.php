@@ -10,7 +10,7 @@ get_header();
     <div class="privacy">
 
 <h3><strong>OUR PRIVACY POLICY AT A GLANCE</strong></h3>
-<ol><li><strong>WHO WE ARE.&nbsp;</strong>We are&nbsp;<strong>SIBERIAN NATURAL PRODUCTS OÜ</strong>, and we process your personal data as joint controllers. This means that we are jointly responsible for how we process and protect your data.</li><li><strong>WHAT WE USE YOUR DATA FOR.&nbsp;</strong>We will use your data (collected online or in person), among other purposes,<strong>&nbsp;to manage your registration</strong>&nbsp;as a user,&nbsp;<strong>to manage your purchases</strong>&nbsp;of products or services, to respond to your queries, and, if you wish, to send you our customised communications.</li><li><strong>WHY WE USE YOUR DATA.&nbsp;</strong>We have legal standing to process your data for various reasons. The main reason is that we need to process your data to&nbsp;<strong>perform the contract</strong>&nbsp;that you accept with us when you register and when you make a purchase or enjoy any of our services or functionalities. We also use your data for other reasons, for example, to respond to your queries or to send you newsletters that you have asked to receive from us.</li><li><strong>WHO WE SHARE YOUR DATA WITH.&nbsp;</strong>We share your data with service providers who provide us with assistance or support, these being companies in the Inditex Group or third party providers, both inside and outside the European Union.</li><li><strong>YOUR RIGHTS.</strong>&nbsp;You have the right to access, rectify or delete your personal data. In certain cases, you are also entitled to other rights, such as, for example, to object to us using your data, or to transferring your data, as explained in depth below.</li></ol>
+<ol><li><strong>WHO WE ARE.&nbsp;</strong>We are&nbsp;<strong>Vitaforest Distribution OÜ</strong>, and we process your personal data as joint controllers. This means that we are jointly responsible for how we process and protect your data.</li><li><strong>WHAT WE USE YOUR DATA FOR.&nbsp;</strong>We will use your data (collected online or in person), among other purposes,<strong>&nbsp;to manage your registration</strong>&nbsp;as a user,&nbsp;<strong>to manage your purchases</strong>&nbsp;of products or services, to respond to your queries, and, if you wish, to send you our customised communications.</li><li><strong>WHY WE USE YOUR DATA.&nbsp;</strong>We have legal standing to process your data for various reasons. The main reason is that we need to process your data to&nbsp;<strong>perform the contract</strong>&nbsp;that you accept with us when you register and when you make a purchase or enjoy any of our services or functionalities. We also use your data for other reasons, for example, to respond to your queries or to send you newsletters that you have asked to receive from us.</li><li><strong>WHO WE SHARE YOUR DATA WITH.&nbsp;</strong>We share your data with service providers who provide us with assistance or support, these being companies in the Inditex Group or third party providers, both inside and outside the European Union.</li><li><strong>YOUR RIGHTS.</strong>&nbsp;You have the right to access, rectify or delete your personal data. In certain cases, you are also entitled to other rights, such as, for example, to object to us using your data, or to transferring your data, as explained in depth below.</li></ol>
 
 
 
@@ -21,7 +21,7 @@ get_header();
 
 
 
-<ul><li>In this&nbsp;<strong>Privacy Policy</strong>, you will find&nbsp;<strong>all relevant information</strong>&nbsp;applicable to our use of our users’ and clients’ personal data,&nbsp;<strong>regardless of the channel or means (online or in person)</strong>&nbsp;of&nbsp;<strong>SIBERIAN NATURAL PRODUCTS OÜ</strong>&nbsp;in Estonia that you use to interact with us.</li><li><strong>We are transparent</strong>&nbsp;about what we do with your personal data, to help you to understand the implications of the way in which we use your data, and the rights you are entitled to in relation to your data:<ul><li>We&nbsp;<strong>permanently</strong>&nbsp;make available for you all the information included in this Privacy Policy, that you can check when you consider appropriate, and in addition,</li><li>you will also find&nbsp;<strong>further information</strong>&nbsp;on how we use your data&nbsp;<strong>as you interact with us</strong>.</li></ul></li><li>These are some terms we regularly use in this Privacy Policy:<ul><li>When we speak about our&nbsp;<strong>Platform</strong>, we refer, in general, to any of the channels or means, digital or in person, you may have used to interact with us. The main one&nbsp;is Our&nbsp;<strong>Website</strong>,&nbsp;<a href="https://vitaforest.eu/">vitaforest.eu</a>.</li></ul></li></ul>
+<ul><li>In this&nbsp;<strong>Privacy Policy</strong>, you will find&nbsp;<strong>all relevant information</strong>&nbsp;applicable to our use of our users’ and clients’ personal data,&nbsp;<strong>regardless of the channel or means (online or in person)</strong>&nbsp;of&nbsp;<strong>Vitaforest Distribution OÜ</strong>&nbsp;in Estonia that you use to interact with us.</li><li><strong>We are transparent</strong>&nbsp;about what we do with your personal data, to help you to understand the implications of the way in which we use your data, and the rights you are entitled to in relation to your data:<ul><li>We&nbsp;<strong>permanently</strong>&nbsp;make available for you all the information included in this Privacy Policy, that you can check when you consider appropriate, and in addition,</li><li>you will also find&nbsp;<strong>further information</strong>&nbsp;on how we use your data&nbsp;<strong>as you interact with us</strong>.</li></ul></li><li>These are some terms we regularly use in this Privacy Policy:<ul><li>When we speak about our&nbsp;<strong>Platform</strong>, we refer, in general, to any of the channels or means, digital or in person, you may have used to interact with us. The main one&nbsp;is Our&nbsp;<strong>Website</strong>,&nbsp;<a href="https://vitaforest.eu/">vitaforest.eu</a>.</li></ul></li></ul>
 
 
 
@@ -33,7 +33,7 @@ get_header();
 
 
 
-<p><strong>SIBERIAN NATURAL PRODUCTS OÜ</strong>, company currently operating in Estonia the sale of&nbsp;<strong>Vitaforest LLC</strong>:</p>
+<p><strong>Vitaforest Distribution OÜ</strong>, company currently operating in Estonia the sale of&nbsp;<strong>Vitaforest LLC</strong>:</p>
 
 
 
@@ -41,7 +41,7 @@ get_header();
 
 
 
-<p>In other words, SIBERIAN NATURAL PRODUCTS OÜ and&nbsp;<strong>Vitaforest LLC</strong>&nbsp;(jointly “We”, “Us” or “the Joint Controllers”), are&nbsp;<strong>Joint Controllers</strong>&nbsp;of the data. This means that we have regulated and are jointly responsible for processing and protecting your personal data.</p>
+<p>In other words, Vitaforest Distribution OÜ and&nbsp;<strong>Vitaforest LLC</strong>&nbsp;(jointly “We”, “Us” or “the Joint Controllers”), are&nbsp;<strong>Joint Controllers</strong>&nbsp;of the data. This means that we have regulated and are jointly responsible for processing and protecting your personal data.</p>
 
 
 

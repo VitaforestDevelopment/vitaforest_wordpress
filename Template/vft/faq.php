@@ -69,7 +69,7 @@ get_header();
     <div class="kb-section__wrapper">
       <div class="kb-section__content">
         <h3 class="kb-section__subtitle">Are your products vegan, gluten & GMO free?</h3>
-        <div class="kb-section__description">All our products are gluten & GMO free. Pure Chaga is vegan and contains no animal products. It is guaranteed GMO free as it is produced exclusively from wild harvested Siberian Chaga mushroom.</div>
+        <div class="kb-section__description">All our products are gluten & GMO free. Pure Chaga is vegan and contains no animal products. It is guaranteed GMO free as it is produced exclusively from wild harvested Chaga mushroom.</div>
       </div>
       <div class="kb-section__content">
         <h3 class="kb-section__subtitle">Does your Chaga products contain caffeine?</h3>

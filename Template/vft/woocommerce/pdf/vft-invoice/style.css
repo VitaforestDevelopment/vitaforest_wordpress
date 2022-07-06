@@ -84,7 +84,7 @@ body {
 	width: 50%;
   }
 .hz-kak-nazvat__left {
-  width: 65%;
+  width: 60%;
 }
   
   .hz-table__header_first {
@@ -102,8 +102,8 @@ body {
   
   .subtotal {
 	border-collapse: collapse;
-	margin-top: 30px;
-	width: 35%;
+	margin-top: 20px;
+	width: 60%;
   }
   
   .subtotal__header {

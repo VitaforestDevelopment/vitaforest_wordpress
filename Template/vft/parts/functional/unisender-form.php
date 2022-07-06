@@ -3,7 +3,7 @@
     <div class="subscription__wrapper">
 	<p class="subscription__spam">No spam and no sales,<br> only exclusive</p>
         <div class="subscription__text-wrapper">
-  <p class="subscription__title">SIBERIAN NATURAL PRODUCTS</p>
+  <p class="subscription__title">Vitaforest Distribution</p>
   <p class="subscription__subtitle">Monthly digest</p>
 </div>
         <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=6nj9iiqg79sahrmhtsfgq9szq4jg6t6ie76u4pfaxsxinuubxuuby" name="subscribtion_form" class='subscription__form'>

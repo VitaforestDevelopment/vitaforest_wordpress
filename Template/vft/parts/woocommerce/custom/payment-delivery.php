@@ -5,4 +5,4 @@
 
 The average production and delivery time for custom-made goods is 35–40 days.</p>
 <h2>Payment</h2>
-<p>Payment is issued on proforma invoice or you can do it online through the Paysera payment system.</p>
+<p>Payment is issued on proforma invoice or you can do it online.</p>

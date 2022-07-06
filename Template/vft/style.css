@@ -1,7 +1,7 @@
 /*
 Theme Name: VFT (Vitaforest)
 Text Domain: Vitaforest
-Version: 2.3.4-pre
+Version: 2.3.9
 Description: Cross-platform template with functional components for the Vitaforest B2B platform.
 Author: Vitaforest, Dejikyo team aka DigitalBros
 Author URI: https://dejikyo.com/
@@ -2824,6 +2824,7 @@ body {
 }
 
 .filter-container .wpc-filters-section_active .wpc-filter-content {
+	overflow-x: hidden;
 	display: block;
 }
 
@@ -10417,6 +10418,7 @@ height: 170px;
 		top: 0px;
 		right: 0;
 		width: 60px;
+		cursor: pointer;
 	}
 
 	.cart-btn {
@@ -11454,6 +11456,8 @@ height: 170px;
 		font-size: 13px;
 		line-height: 16px;
 		color: #40bf6a;
+		background: white;
+		cursor: pointer;
 	}
 
 	.product-container .product-card-slider {
@@ -17874,3 +17878,30 @@ cursor: pointer;
 			width: 28px;
 		}
 	}
+.ukraine{
+	display: none !important;
+}
+.rc-anchor.rc-anchor-invisible.rc-anchor-light {
+	display: none !important;
+}
+.grecaptcha-badge{
+	display: none !important;
+}
+
+.shop_table.b2bking_shop_table{
+	display: none !important;
+}
+
+.woocommerce-button.button.woocommerce-form-login__submit:hover{
+background: #61D186;
+text-decoration: none;
+}
+
+.woocommerce-button.button.woocommerce-form-login__submit:active{
+background: #2E9E53;
+text-decoration: none;
+}
+
+.bx-livechat-control-btn.bx-livechat-control-btn-menu{
+	display: none;
+}

@@ -16,7 +16,7 @@
       <div class="main-footer__column">
         <img class="logo" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-light.svg" alt="Website logo">
         <div class="main-footer__company-info">
-          <p itemprop="name">Siberian Natural Products OÜ</p>
+          <p itemprop="name">Vitaforest Distribution OÜ</p>
           <p>Register code: 14377464</p>
           <p>VAT No: EE102049370</p>
 			<div itemprop="address" itemscope>
@@ -43,7 +43,7 @@
 	  </div>
     <div class="row-top-line">
 		<div class="container main-footer__row">
-      <p class="main-footer__coperight">© VitaForest 2021</p>
+      <p class="main-footer__coperight">© VitaForest <?php echo date('Y'); ?></p>
       <a href="/privacy-policy" class="main-footer__privacy">Privacy Policy</a>
 		</div>
     </div>

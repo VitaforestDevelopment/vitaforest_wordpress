@@ -41,8 +41,7 @@
                     <h2 class="preview__title">Genuine ingredient boosts the potential benefits of your product </h2>
                    <div class="preview__row">
                         <button class="preview__btn btn">Get now</button>
-                        <p class="preview__notice">A product with unique properties
-                            from the wild places of Siberia</p>
+                        <p class="preview__notice">A product with unique properties of natural raw materials</p>
                     </div>
                 </div>
             </div>
@@ -77,16 +76,6 @@ Only birch chaga collected from alive trunks can exert a curative effect. You ca
                     <p class="advantage__text">Our warehouse is located in Tallinn, Estonia, which allows us to deliver
                         in the
                         shortest possible time</p>
-                </div>
-                <div class="advantages__item advantage">
-                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/mountains.svg" alt="" class="advantage__logo">
-                    <h4 class="advantage__title">Products of Siberian origin</h4>
-                    <p class="advantage__description">Wild raw materials from Siberia</p>
-                    <p class="advantage__text">We meticulously collect raw materials
-                        in ecologically safe regions of Siberia to preserve the most
-                        powerful complex of biologically active substances and share with you the pristine, unbridled
-                        power of the
-                        wild nature of this unique region</p>
                 </div>
                 <div class="advantages__item advantage" id="documents-list-anchor">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/european.svg" alt="Standarts image" class="advantage__logo">
@@ -203,7 +192,7 @@ Only birch chaga collected from alive trunks can exert a curative effect. You ca
             </div>
             <div class="company">
                 <h2 class="company__title">Company info</h2>
-                <p>SIBERIAN NATURAL PRODUCTS OÜ</p>
+                <p>VITAFOREST DISTRIBUTION OÜ</p>
                 <p>Register code: 14377464</p>
                 <p>VAT No: EE102049370</p>
             </div>
@@ -232,7 +221,7 @@ Only birch chaga collected from alive trunks can exert a curative effect. You ca
     </main>
     <footer class="main-footer">
         <div class="footer__row copyright">
-            <p class="copyright__text">Copyright © 2021 All rights reserved Vitaforest</p>
+            <p class="copyright__text">Copyright © 2022 All rights reserved Vitaforest</p>
         </div>
 	  <div class="main-footer__popup footer-popup">
     <div class="container">

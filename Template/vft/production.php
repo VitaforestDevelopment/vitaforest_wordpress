@@ -36,7 +36,7 @@ get_header();
   <section class="process-step obtaining">
     <h2 class="process-step__title">Obtaining raw materials</h2>
     <p>
-      Raw materials are obtained in outlying Siberian areas, far away from urban civilization. Our company with help of
+      Raw materials are obtained in outlying wild areas, far away from urban civilization. Our company with help of
       local people carefully forage wild mushrooms, berries, fruits, roots and herbs by hand, this way the ecological
       purity of our raw materials is guaranteed. We do not stimulate growth of raw materials anyhow and do not cultivate
       any organic products, instead we benefit from natural environment and wild nature.</p>

@@ -1,19 +1,16 @@
-<?php
-header('Expires: '.gmdate('D, d M Y H:i:s', time() + 7200).' GMT');
-header('Cache-Control: no-cache, must-revalidate');
-$mt = filemtime($file_name);
-$mt_str = gmdate("D, d M Y H:i:s ")."GMT";
-if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) &&
-strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= $mt)
-{header('HTTP/1.1 304 Not Modified');
-die;
-}
-header('Last-Modified: '.$mt_str);
-echo $text;
-header("Vary: Accept-Encoding");
-header("Accept-Encoding:gzip,deflate,sdch");
-?>
 <?wp_head();?>
+<script>
+	function getCookie(name) {
+		let matches = document.cookie.match(new RegExp(
+			"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+		));
+		return matches ? decodeURIComponent(matches[1]) : undefined;
+	}
+	let badIpCookieState = getCookie('iIlM');
+	if (badIpCookieState == 'true' && document.location.href != 'https://vitaforest.eu/en/dev') {
+		window.location.href='https://vitaforest.eu/dev';
+	}
+</script>
 <a class="back_to_top" title="Go up">&uarr;</a>
 <div class="advisitor-btn">
 	

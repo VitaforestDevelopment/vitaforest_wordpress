@@ -38,7 +38,7 @@ get_header();
         <p>The international company Vitaforest is the group of experts in the production
           and
           supply of raw materials and extracts from wild plants and mushrooms. We carefully collect raw materials in
-          ecologically clean regions of Siberia to preserve the most powerful complex of biologically active substances
+          ecologically clean regions to preserve the most powerful complex of biologically active substances
           of
           plant sources, to share with you the pristine unbridled power of the wild nature of this unique region.</p>
       </div>
@@ -57,7 +57,7 @@ get_header();
         </p>
         <p>At your request, we are able to develop technical documentation and produce
           dry extracts or powders from any
-          wild-growing sources in Siberia which are famous for having high stimulating properties and naturally activate
+          wild-growing sources which are famous for having high stimulating properties and naturally activate
           the innate vigor of the human and animal body.</p>
       </div>
 
@@ -69,7 +69,7 @@ get_header();
 		  
         <h4 class="title-small">Location and delivery</h4>
         <p>The company's departments responsible for the foraging and processing of plant
-          materials. Production and quality control is located in Russia. Storage, allocation and shipment are carried
+          materials. Storage, allocation and shipment are carried
           out
           from the terminal in Tallinn (Estonia).</p>
 		  <p>We collaborate with the logistics company Europiir Logistics for more than 3 years

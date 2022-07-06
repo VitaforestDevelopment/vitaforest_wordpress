@@ -81,7 +81,7 @@ do_action( 'woocommerce_after_single_product_summary' );
 				</div>
 			</div>
 		<div class="product__ask-сontainer">
-  <a href="" class="product__ask-link">Ask question</a>
+  <button class="product__ask-link">Ask question</button>
 </div>
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 <? do_action( 'vft_js_jquery' ); ?>

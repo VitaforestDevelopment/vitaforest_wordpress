@@ -1,11 +1,16 @@
 <?
 /*
-* Template Name: Rhodiola Promo
+* Template Name: Rhodiola Promo Spain
 */
 ?>
 <? wp_head(); ?>
 <body>
 	<div class='bglayer'></div>
+	<div class="jija ya-oslep">
+	</div>
+	<div class="jija-noti ya-oslep">
+		<div class="popa"><div class="popa__head"><p class="popa__title">¡Atención!</p></div><p class="popa__text">La información de esta página está destinada a los profesionales. Para continuar, por favor confirme que es un participante profesional del mercado.</p><div class="popa-actions"><button class="popa__confirm">Confirmar</button></div></div>
+	</div>
     <header class="main-header">
         <div class="main-header__row container">
 			<a href="/"><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-white.svg" alt="Website logo" class="main-header__logo"></a>
@@ -15,18 +20,18 @@
     <main class="main-content">
         <div class="popup popup_sl">
             <button class='popup__close popup_sl__close'><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/close.svg" alt=""></button>
-            <h3 class="popup__title">Leave your contact details, we will contact you</h3>
+            <h3 class="popup__title">Deja tus datos de contacto</h3>
 			<div class="popup__noti">
 				
 			</div>
-            <? echo do_shortcode('[contact-form-7 id="16027" title="Rhodiola Land | Header Form" html_class="header-form"]'); ?>
+            <? echo do_shortcode('[contact-form-7 id="16316" title="Rhodiola Land Spain | Header Form" html_class="header-form"]'); ?>
         </div>
 		<div class="popup popup_docs">
             <button class='popup__close popup_docs__close'><img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/close.svg" alt=""></button>
-            <h3 class="popup__title">Leave your contacts to learn more about the product</h3>
+            <h3 class="popup__title">Deja tus datos de contacto</h3>
 			<div class="popup__noti_files">	
 			</div>
-            <? echo do_shortcode('[contact-form-7 id="16028" title="Rhodiola Land | Files form" html_class="files-form"]'); ?>
+            <? echo do_shortcode('[contact-form-7 id="16314" title="Rhodiola Land Spain | Files form" html_class="files-form"]'); ?>
         </div>
 				<div class="files-preview">
 			<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/file.png">
@@ -39,68 +44,64 @@
                 <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/rhodiola-land.png" alt="#" class="preview__image">
 				</picture>
                 <div class="preview__wrapper">
-                    <h2 class="preview__title">Genuine ingredient boosts the potential benefits of your product </h2>
+                    <h2 class="preview__title">Genuino ingrediente estandarizado aumenta los beneficios potenciales de su producto.</h2>
                    <div class="preview__row">
-                        <button class="preview__btn btn">Get now</button>
-                        <p class="preview__notice">A product with unique properties of natural raw materials</p>
+                        <button class="preview__btn btn">Contact us</button>
+                        <p class="preview__notice">Productos que cumplen con todos los estándares de calidad Europeos</p>
                     </div>
                 </div>
             </div>
         </div>
         <section class="product">
-            <div class="container">
-                <div class="product__wrapper">
-                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/rhodiola-product-land.png" alt="" class="product__image">
-                    <div class="product__content">
-                        <h2 class="product__title">About Rhodiola Rosea</h2>
-                        <p class="product__text">Rhodiola rosea is one of the best plants providing adaptogenic
-                            properties.
-                            Rhodiola has been used since ancient times in Tibetan medicine. It grows in regions with a
-                            cold
-                            and
-                            temperate climate, like North America, the United Kingdom, and Ireland, in alpine mountain
-                            meadows (in the
-                            Alps, Pyrenees, Carpathians) and in the Pamirs.
-                        </p>
-                        <p class="product__text">
 
-                        </p>
-                    </div>
-                </div>
-            </div>
 
         </section>
         <div class="elem-wrapper elem-wrapper_white">
             <section class='mountain-element mountain-element_white'></section>
         </div>
         <section class="advantages">
-            <h3 class="advantages__title">Our advantages</h3>
+            <h3 class="advantages__title">Nuestros productos</h3>
             <div class="advantages__list container">
                 <div class="advantages__item advantage">
-					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/clock.svg" alt="" class="advantage__logo">
-                    <h4 class="advantage__title">We work fast</h4>
-                    <p class="advantage__description">Shipment with in 2 days</p>
-                    <p class="advantage__text">Our warehouse is located in Tallinn, Estonia, which allows us to deliver
-                        in the
-                        shortest possible time</p>
+                    <h4 class="advantage__title">Rhodiola Rosea Extract</h4>
+                    <p class="advantage__description">3% Rosavins, 1% Solidroside</p>
+                </div>
+                <div class="advantages__item advantage">
+                    <h4 class="advantage__title">Rhodiola Rosea Extract</h4>
+                    <p class="advantage__description">5% Rosavins, 1% Solidroside</p>
+                </div>
+                <div class="advantages__item advantage">
+                    <h4 class="advantage__title">Rhodiola Rosea Powder</h4>
+                    <p class="advantage__description"></p>
+                </div>
+            </div>
+        </section>
+		        <section class="advantages secondary">
+            <h3 class="advantages__title">Razones para elegir Vitaforest</h3>
+            <div class="advantages__list container">
+                <div class="advantages__item advantage xyu">
+                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/clock.svg" alt="" class="advantage__logo">
+                    <h4 class="advantage__title">Trabajamos rápido</h4>
+                    <p class="advantage__description">Entrega a España en 1 semana</p>
+                    <p class="advantage__text">Nuestro almacén está ubicado en Tallin, Estonia, lo que nos permite realizar las entregas en el menor tiempo posible.</p>
                 </div>
                 <div class="advantages__item advantage" id="document-list-anchor">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/european.svg" alt="" class="advantage__logo">
-                    <h4 class="advantage__title">European standards</h4>
-                    <p class="advantage__description">Bulk ingredients that comply with the EU regulations.</p>
-                    <p class="advantage__text">Product quality and safety measurements are performed in European third-party labs. The products do not contain ethylene oxides in accordance with Regulation (EC) No 396/2005.</p>
+                    <h4 class="advantage__title">Estándares Europeos</h4>
+                    <p class="advantage__description">Ingredientes que cumplen la normativas de la UE.</p>
+                    <p class="advantage__text">Los analisis y control de la calidad y seguridad de los productos se realizan en laboratorios europeos de terceros. </br> Los productos no contienen óxidos de etileno de acuerdo con el Reglamento (CE) № 396/2005.</p>
                 </div>
             </div>
         </section>
         <section class="documents">
-			<h3 class="documents__title">Learn more about our products</h3>
+			<h3 class="documents__title">Más información sobre nuestros productos</h3>
             <div class="container">
                 <ul class="documents__list">
                     <li class="documents__item document document_pdf">
                         <h4 class="document__name">Rhodiola TDS</h4>
                         <a href="#document-list-anchor" class="document__download">Download</a>
                     </li>
-                    <li class="documents__item document document_docx">
+                    <li class="documents__item document document_pdf">
                         <h4 class="document__name">Rhodiola SDS</h4>
                         <a href="#document-list-anchor" class="document__download">Download</a>
                     </li>
@@ -112,72 +113,50 @@
             </div>
         </section>
         <section class="usage">
-            <h3 class="usage__title">Rhodiola Rosea will be interested to manufacturers of</h3>
+            <h3 class="usage__title">La Rhodiola Rosea interesará a los fabricantes de</h3>
             <div class="usage__slider">
                 <div class="usage__slide usage-slide">
                     <a href="/shop/industry-food-supplements/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/supplements.svg" alt="" class="usage-slide__icon">
-                    <h4 class="usage-slide__title">Food supplements</h4>
+                    <h4 class="usage-slide__title">Complementos alimenticios</h4>
                     <ul class="usage-slide__list">
-                        <li>Dietary supplements and creams for recovery after injuries, surgery, or ailments</li>
-                        <li>Products for minimizing environmental effects at harsh-condition sites (radioactive
-                            zones
-                            etc.)</li>
-                        <li>Products and vitamins to solve local problems: regulate blооd pressure, improve
-                            metabolism;
-                            auxiliary
-                            products for women and men; heart health medicines, etc</li>
-                        <li>Dietary supplements stimulating stamina, enhancing productivity; nootropics</li>
+<li>Suplementos dietéticos y cremas para la recuperación después de lesiones, cirugías o dolencias</li><li>Productos para minimizar los efectos ambientales en lugares de difícil acceso (zonas radiactivas, etc.)</li><li>Productos y vitaminas para resolver problemas locales: regular la presión arterial, mejorar el metabolismo; productos auxiliares para mujeres y hombres; medicamentos para la salud del corazón, etc.</li><li>Suplementos dietéticos que estimulan la resistencia y mejoran la productividad; nootrópicos</li>
                     </ul>
                     </a>
                 </div>
                 <div class="usage__slide usage-slide">
-                    <a href="/shop/industry-cosmetics/">
+                    <a href="/shop/industry-cosmetic/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img//cosmetics.svg" alt="" class="usage-slide__icon">
-                    <h4 class="usage-slide__title">Cosmetics</h4>
+                    <h4 class="usage-slide__title">Cosméticos</h4>
                     <ul class="usage-slide__list">
-                        <li>Face, skin, еуе, hand саге cosmetics</li>
-                        <li>Shampoos and hair products</li>
-                        <li>Perfumery and fragranced cosmetics (including soap)</li>
-                        <li>Bath foam, lotions, and salt</li>
-                        <li>Deodorants (including dry deodorants) and foot саге creams</li>
-                        <li>Hair dyes and coloring balms (rhodiola is а natural dye)</li>
+<li>Cosméticos para la cara, la piel у las manos</li><li>Champús y productos capilares</li><li>Perfumería y cosméticos perfumados (incluido el jabón)</li><li>Espuma de baño, lociones y sal</li><li>Desodorantes (incluidos los desodorantes en seco) y cremas para los pies</li><li>Tintes y bálsamos para el cabello (la rodiola es а tinte natural)</li>
                     </ul>
                     </a>
                 </div>
                 <div class="usage__slide usage-slide">
                     <a href="/shop/industry-pharmaceutical-industry/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/pharma.svg" alt="" class="usage-slide__icon">
-                    <h4 class="usage-slide__title">Pharma</h4>
+                    <h4 class="usage-slide__title">Farmacia</h4>
                     <ul class="usage-slide__list">
-                        <li>Products to reduce nervous tension and manifestations of depression</li>
-                        <li>Male strength enhancement products</li>
-                        <li> lmmunomodulatory products</li>
-                        <li>Anti-viral and anti-inflammatory products</li>
+<li>Productos para reducir la tensión nerviosa y las manifestaciones de depresión</li><li>Productos para aumentar la fuerza masculina</li><li>Productos inmunomoduladores</li><li>Productos antivirales y antiinflamatorios</li>
                     </ul>
                     </a>
                 </div>
                 <div class="usage__slide usage-slide">
                     <a href="/shop/industry-healthy-nutrition/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/nutrition.svg" alt="" class="usage-slide__icon">
-                    <h4 class="usage-slide__title">Healthy nutrition</h4>
+                    <h4 class="usage-slide__title">Nutrición saludable</h4>
                     <ul class="usage-slide__list">
-                        <li>Sports nutrition</li>
-                        <li>Sports drinks (including powdered)</li>
-                        <li>Sports creams and gels</li>
-                        <li>Sports dietary supplements.</li>
+<li>Nutrición deportiva</li><li>Bebidas deportivas (incluso en polvo)</li><li>Cremas y geles deportivos</li><li>Suplementos dietéticos para el deporte</li>
                     </ul>
                     </a>
                 </div>
                 <div class="usage__slide usage-slide">
                     <a href="/shop/industry-food-and-beverages/">
                     <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/food.svg" alt="" class="usage-slide__icon">
-                    <h4 class="usage-slide__title">Food and beverages</h4>
+                    <h4 class="usage-slide__title">Alimentos y bebidas</h4>
                     <ul class="usage-slide__list">
-                        <li>Functional beverage</li>
-                        <li>Strong alcoholic drinks (e.g. vodka, whiskey)</li>
-                        <li>Marmalade, marshmallows</li>
-                        <li>Dry and liquid jelly</li>
+<li>Bebida funcional</li><li>Bebidas alcohólicas fuertes (por ejemplo, vodka, whisky)</li><li>Mermelada, malvaviscos</li><li>Gelatina seca y líquida</li>
                     </ul>
                     </a>
                 </div>
@@ -188,11 +167,11 @@
         </div>
         <section class="questions">
             <div class="container">
-                <h3 class="questions__title">Still have questions?</h3>
-                <p class="questions__description">Contact us and we will answer them as soon as possible</p>
+                <h3 class="questions__title">¿Todavía tiene preguntas?</h3>
+                <p class="questions__description">Póngase en contacto con nosotros y le responderemos</p>
                 <div class="questions__wrapper">
 					<div class="form">
-                   <? echo do_shortcode('[contact-form-7 id="16029" title="Rhodiola Land | Footer Form" html_class="footer-form"]'); ?>
+                   <? echo do_shortcode('[contact-form-7 id="16315" title="Rhodiola Land Spain | Footer Form" html_class="footer-form"]'); ?>
 					</div>
 <div class="about-company">
 	<div class="logo-wrapper">
@@ -201,7 +180,7 @@
 		</div>
             <div class="contacts">
                 <h2 class="contacts__title">
-                    Contact info
+                    Contactos
                 </h2>
                 <p>Harju maakond, Tallinn,</p>
                 <p>Lasnamäe linnaosa,</p>
@@ -210,13 +189,13 @@
                 <p style="color: white; text-decoration: none;">+3728801043</p>
             </div>
             <div class="company">
-                <h2 class="company__title">Company info</h2>
+                <h2 class="company__title">Empresa</h2>
                 <p>VITAFOREST DISTRIBUTION OÜ</p>
                 <p>Register code: 14377464</p>
                 <p>VAT No: EE102049370</p>
             </div>
             <div class="follow-us">
-                <h2 class="follow-us__title">Follow us</h2>
+                <h2 class="follow-us__title">Siga con nosotros</h2>
                 <div class="follow-us__links">
                     <a href="https://www.facebook.com/vitaforestfood/" class="follow-us__link">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,6 +232,28 @@
 </div>
         <? wp_footer(); ?>
     </footer>
+<script id="notiBeforeAccess">
+	
+	
+let jijaBtn = document.querySelector('.popa__confirm');
+let jijaNoti = document.querySelector('.jija-noti');
+let jijaBg = document.querySelector('.jija');
+	
+
+window.setTimeout(removeHuety, 5000);
+
+
+function removeHuety(){
+	jijaNoti.classList.remove('ya-oslep');
+	jijaBg.classList.remove('ya-oslep');
+}
+	
+jijaBtn.addEventListener('click', ()=>{
+	jijaNoti.classList.add('ya-oslep');
+	jijaBg.classList.add('ya-oslep');
+})
+	
+</script>
     <script>
 		let btns = document.querySelectorAll('.btn');
 		let popupsl = document.querySelector('.popup_sl');
@@ -337,23 +338,11 @@ chBtn.onclick = function () {
     let timer = setTimeout(validateClick, 3000);;
 }
 	</script>
-	<script>
-	if(localStorage.getItem('adVisitDate') != null){
-	null;
-	}
-	else{
-	let dateController = Date.now();
-	localStorage.setItem('adVisitDate', dateController);
-	}
-	let dateController = Date.now();
-	localStorage.setItem('adVisitDate', dateController);
-	localStorage.setItem('adVisitor', 'rhodiola');
-	</script>
     <? do_action('vft_js_landslick'); ?>
 <script>
         (function(w,d,u){
                 var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
                 var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://portal.vitaforestfood.com/upload/crm/site_button/loader_9_ckkdae.js');
+        })(window,document,'https://portal.vitaforestfood.com/upload/crm/site_button/loader_13_4e16zh.js');
 </script>
 </body>

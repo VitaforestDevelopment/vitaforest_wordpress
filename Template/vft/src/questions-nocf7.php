@@ -26,7 +26,7 @@ get_header(); ?>
       Company info
     </h2>
     <p class="contact-info__description">
-      SIBERIAN NATURAL PRODUCTS OÜ <br>
+      Vitaforest Distribution OÜ <br>
       Register code: 14377464 <br>
       VAT No: EE102049370
     </p>
